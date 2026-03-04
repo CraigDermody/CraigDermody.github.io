@@ -1,3 +1,4 @@
 # Resume
 
-Placeholder for my professional experience in data analytics, performance management, and civic technology.
+**Download my resume:**  
+[Craig Dermody Resume (PDF)](assets/Craig-Dermody-Resume.pdf)
