@@ -6,6 +6,8 @@ permalink: /articles/
 
 # Articles
 
+Insights on data analytics, public sector technology, dashboard design, and building data-driven organizations. These articles share practical lessons from working at the intersection of **data, technology, and government service delivery**.
+
 Filter by topic or search to find posts by theme.
 
 <div id="topic-filters" style="margin: 12px 0 14px 0;"></div>
