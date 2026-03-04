@@ -9,10 +9,9 @@ permalink: /articles/
 Filter by topic or search to find posts by theme.
 
 <div id="topic-filters" style="margin: 12px 0 14px 0;"></div>
-
-<input id="article-search" type="text" placeholder="Search articles..." style="display:block; box-sizing:border-box; width:100%; max-width:520px; padding:10px 12px; border-radius:10px; border:1px solid #ddd; margin:0 0 14px 0;">
-
+<div id="search-container"></div>
 <div id="articles-feed"></div>
+
 <script>
 window.__ARTICLES__ = [
   {% assign items = site.articles | sort: "date" | reverse %}
@@ -29,7 +28,14 @@ window.__ARTICLES__ = [
 
 (function () {
   const filtersEl = document.getElementById("topic-filters");
+  const searchContainer = document.getElementById("search-container");
   const feedEl = document.getElementById("articles-feed");
+
+  // Build the search box via JS (avoids Markdown/HTML rendering quirks)
+  searchContainer.innerHTML = `
+    <input id="article-search" type="text" placeholder="Search articles..."
+      style="display:block; box-sizing:border-box; width:100%; max-width:520px; padding:10px 12px; border-radius:10px; border:1px solid #ddd; margin:0 0 14px 0;">
+  `;
   const searchEl = document.getElementById("article-search");
 
   const posts = (window.__ARTICLES__ || []).map(p => ({
@@ -66,7 +72,7 @@ window.__ARTICLES__ = [
   }
 
   function renderFeed() {
-    const q = (searchEl?.value || "").toLowerCase().trim();
+    const q = (searchEl.value || "").toLowerCase().trim();
 
     const filteredByTag = activeTag === "all"
       ? posts
@@ -101,7 +107,6 @@ window.__ARTICLES__ = [
 
   renderFilters();
   renderFeed();
-
-  searchEl?.addEventListener("input", renderFeed);
+  searchEl.addEventListener("input", renderFeed);
 })();
 </script>
