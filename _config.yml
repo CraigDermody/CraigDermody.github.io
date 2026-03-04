@@ -6,3 +6,8 @@ header_pages:
   - projects.md
   - articles.md
   - testimonials.md
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name/
