@@ -6,9 +6,17 @@ permalink: /articles/
 
 # Articles
 
-Filter by topic to find posts by theme.
+Filter by topic or search to find posts by theme.
 
-<div id="topic-filters" style="margin: 12px 0 18px 0;"></div>
+<div id="topic-filters" style="margin: 12px 0 14px 0;"></div>
+
+<input
+  id="article-search"
+  type="text"
+  placeholder="Search articles..."
+  style="width:100%; max-width:520px; padding:10px 12px; border-radius:10px; border:1px solid #ddd; margin: 0 0 14px 0;"
+>
+
 <div id="articles-feed"></div>
 
 <script>
@@ -28,6 +36,8 @@ window.__ARTICLES__ = [
 (function () {
   const filtersEl = document.getElementById("topic-filters");
   const feedEl = document.getElementById("articles-feed");
+  const searchEl = document.getElementById("article-search");
+
   const posts = (window.__ARTICLES__ || []).map(p => ({
     ...p,
     tags: Array.isArray(p.tags) ? p.tags : []
@@ -62,12 +72,22 @@ window.__ARTICLES__ = [
   }
 
   function renderFeed() {
-    const filtered = activeTag === "all"
+    const q = (searchEl?.value || "").toLowerCase().trim();
+
+    const filteredByTag = activeTag === "all"
       ? posts
       : posts.filter(p => p.tags.includes(activeTag));
 
+    const filtered = q
+      ? filteredByTag.filter(p =>
+          (p.title || "").toLowerCase().includes(q) ||
+          (p.excerpt || "").toLowerCase().includes(q) ||
+          (p.tags || []).join(" ").toLowerCase().includes(q)
+        )
+      : filteredByTag;
+
     if (filtered.length === 0) {
-      feedEl.innerHTML = `<div style="opacity:0.7; margin-top:12px;">No articles match this topic yet.</div>`;
+      feedEl.innerHTML = `<div style="opacity:0.7; margin-top:12px;">No articles match this filter yet.</div>`;
       return;
     }
 
@@ -87,5 +107,7 @@ window.__ARTICLES__ = [
 
   renderFilters();
   renderFeed();
+
+  searchEl?.addEventListener("input", renderFeed);
 })();
 </script>
