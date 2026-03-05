@@ -6,11 +6,10 @@ theme: minima
 permalink: pretty
 
 header_pages:
-  - about.md
   - resume.md
-  - projects.md
-  - articles.md
   - testimonials.md
+  - articles.md
+  - projects.md
   - contact.md
 
 collections:
