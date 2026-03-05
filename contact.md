@@ -10,7 +10,7 @@ title: Contact
       Send a message using the form below. I’ll get back to you as soon as possible.
     </p>
 
-    <form id="contactForm" method="POST" action="https://formspree.io/f/meerjdwl" novalidate>
+    <form id="contactForm" method="POST" action="https://formspree.io/f/meerjdwl">
       <div class="field">
         <label for="email">Enter your email address</label>
         <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
@@ -152,6 +152,12 @@ title: Contact
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
       status.textContent = '';
+
+      // Enforce HTML5 validation before sending
+      if (!form.reportValidity()) {
+        return;
+      }
+
       submitBtn.disabled = true;
       submitBtn.textContent = 'Submitting…';
 
@@ -164,14 +170,26 @@ title: Contact
           headers: { 'Accept': 'application/json' }
         });
 
+        const data = await response.json().catch(() => null);
+
         if (response.ok) {
           form.style.display = 'none';
           successMessage.style.display = 'block';
+          return;
+        }
+
+        // Show real Formspree error if available
+        if (data && data.errors && data.errors.length) {
+          status.textContent = data.errors.map(e => e.message).join(' ');
+        } else if (data && data.error) {
+          status.textContent = data.error;
         } else {
           status.textContent = 'Something went wrong. Please try again.';
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Submit';
         }
+
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+
       } catch (err) {
         status.textContent = 'Network error. Please try again.';
         submitBtn.disabled = false;
