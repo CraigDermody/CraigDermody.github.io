@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Data Visualization Shouldn't be Rocket Science"
-date: 2026-03-04
+date: 2025-10-03
 tags: [dashboard-design, data-visualization, business-intelligence, public-sector, usability]
 excerpt: "Effective data visualization is not about visual complexity; it is about reducing cognitive load so people can quickly understand what matters and act on it."
 ---
