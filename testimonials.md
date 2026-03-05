@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resume
+title: Testimonials
 ---
 
 # Manager Testimonials
