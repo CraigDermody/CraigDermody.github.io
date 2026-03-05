@@ -25,6 +25,8 @@ layout: default
 <style>
   /* Minimal, consistent typography for articles */
   .article-meta { opacity: 0.75; font-size: 0.95em; margin-top: 6px; }
+  .article-author { font-weight: 600; }
+  .article-date { }
   .article-tags { margin-top: 10px; font-size: 0.9em; opacity: 0.85; }
   .article-nav { display:flex; gap:12px; justify-content:space-between; margin-top: 28px; padding-top: 18px; border-top: 1px solid #eee; }
   .article-nav a { text-decoration:none; }
@@ -38,7 +40,8 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <div class="article-meta">
-  {{ page.date | date: "%B %-d, %Y" }}
+  <div class="article-author">{{ site.author }}</div>
+  <div class="article-date">{{ page.date | date: "%B %-d, %Y" }}</div>
 </div>
 
 {% if page.tags %}
