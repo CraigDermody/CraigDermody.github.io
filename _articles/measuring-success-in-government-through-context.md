@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Measuring Success in Government Through Context"
-date: 2026-03-05
+date: 2025-11-21
 tags: [analytics, public-sector, data-visualization]
 excerpt: "Public-sector outcomes are complex and cross-jurisdictional, but transparent, well-scoped measurement—paired with honest context—is one of the strongest tools local governments have to build trust."
 ---
