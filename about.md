@@ -15,7 +15,7 @@ title: About
 
   <div style="flex:1; min-width:260px;">
 
-**Hi — I'm Craig Dermody.** I build data tools and dashboards that help governments and organizations make better decisions.
+**Hi, I'm Craig Dermody.** I build data tools and dashboards that help governments and organizations make better decisions.
 
 I specialize in:
 - Business intelligence and dashboard design (Power BI)
@@ -39,17 +39,12 @@ If you want to collaborate, discuss a role, or talk shop about analytics in the 
 
 ---
 
-## What you'll find on this site
+## Outside of Work
 
-- **Projects:** end-to-end case studies showing how I approach analytics work (from problem framing to delivery)
-- **Articles:** practical writing on BI, public sector data, usability, and decision-making
-- **Resume:** my professional experience and credentials
-- **Testimonials:** feedback from colleagues and training participants
+I live in the San Francisco Bay Area and recently became a parent, which has been a joyful and perspective-changing experience. I am currently finishing a professional sabbatical while completing a graduate degree in data analytics and preparing for my next role in the public sector.
 
----
+I stay closely connected to the civic technology community through volunteer work. I contribute to organizations such as U.S. Digital Response and the Aspen Tech Policy Hub, where I help support projects that improve how governments deliver services. I also teach financial literacy workshops for recent college graduates and serve on the board of a public service fellowship program that helps early-career professionals enter government work.
 
-## What I’m looking for
+In addition to volunteer work, I occasionally provide pro bono support to local governments, academic institutions, and nonprofit organizations on data product development and service design. I also take on a limited number of consulting and development projects with private-sector clients. If you are interested in collaborating, please see the Contact section.
 
-I’m especially interested in roles that blend analytics with service delivery — where the goal is to improve decisions, operations, and outcomes for real people.
-
-If that overlaps with what you’re building, I’d love to connect.
+Outside of technology and analytics, I enjoy hands-on hobbies that get me away from screens. I like refurbishing furniture and collecting stationery.
