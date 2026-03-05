@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Nudges, Bottlenecks, and Better Service Delivery"
-date: 2026-03-05
+date: 2026-02-11
 tags: [analytics, public-sector, data-visualization]
 excerpt: "Behavioral insights help governments improve service outcomes by redesigning friction points—then testing changes with clear metrics, not guesses."
 ---
