@@ -2,14 +2,15 @@ title: Craig Dermody
 author: Craig Dermody
 theme: minima
 
+# Use clean URLs like /contact/ instead of /contact.html
 permalink: pretty
 
 header_pages:
-  - resume.md
-  - articles.md
-  - projects.md
-  - testimonials.md
   - about.md
+  - resume.md
+  - projects.md
+  - articles.md
+  - testimonials.md
   - contact.md
 
 collections:
