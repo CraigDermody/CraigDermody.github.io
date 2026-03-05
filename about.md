@@ -15,13 +15,14 @@ title: About
 
   <div style="flex:1; min-width:260px;">
 
-**Hi, I'm Craig Dermody.** I build data tools and dashboards that help governments and organizations make better decisions.
-
+<strong>Hi — I'm Craig Dermody.</strong> I build data tools and dashboards that help governments and organizations make better decisions.
 I specialize in:
-- Business intelligence and dashboard design (Power BI)
-- Data modeling, ETL, and reporting automation
-- Public-sector analytics and performance measurement
-- User-centered design, accessibility, and clear data communication
+<ul>
+  <li>Business intelligence and dashboard design (Power BI)</li>
+  <li>Data modeling, ETL, and reporting automation</li>
+  <li>Public-sector analytics and performance measurement</li>
+  <li>User-centered design, accessibility, and clear data communication</li>
+</ul>
 
 I’ve spent several years working inside local government, where the challenge isn’t just building something that works — it’s building something that people will actually use, trust, and maintain.
 
