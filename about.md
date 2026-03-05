@@ -24,19 +24,10 @@ I specialize in:
   <li>User-centered design, accessibility, and clear data communication</li>
 </ul>
 
-I’ve spent several years working inside local government, where the challenge isn’t just building something that works — it’s building something that people will actually use, trust, and maintain.
+I’ve spent several years working inside local government, where the challenge isn’t just building something that works — it’s building something that people will actually use, trust, and maintain. On this site, you can find my resume, articles and projects, as well as testimonials from former managers and training attendees.
 
   </div>
 </div>
-
----
-
-## Contact
-
-If you want to collaborate, discuss a role, or talk shop about analytics in the public sector, the easiest way to reach me is:
-
-- **Email:** [cdermod@gmail.com](mailto:cdermod@gmail.com)
-- **LinkedIn:** [linkedin.com/in/craig-dermody/](https://linkedin.com/in/craig-dermody/)
 
 ---
 
