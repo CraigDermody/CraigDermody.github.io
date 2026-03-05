@@ -2,6 +2,8 @@ title: Craig Dermody
 author: Craig Dermody
 theme: minima
 
+permalink: pretty
+
 header_pages:
   - resume.md
   - articles.md
