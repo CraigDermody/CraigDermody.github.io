@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "It Pays to Pick Low-Hanging Fruit"
-date: 2026-03-05
+date: 2026-01-26
 tags: [analytics, public-sector, data-visualization]
 excerpt: "Basic, public-sector-tailored technical training can deliver outsized time savings and lasting internal capacity—often with better ROI than new tools or consultant projects."
 ---
