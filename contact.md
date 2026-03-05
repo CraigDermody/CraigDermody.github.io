@@ -31,11 +31,6 @@ title: Contact
         </select>
       </div>
 
-      <div class="field" id="otherField" style="display:none;">
-        <label for="otherReason">If “Other,” please specify</label>
-        <input id="otherReason" name="other_reason" type="text" placeholder="Type your reason">
-      </div>
-
       <div class="field">
         <label for="details">Would you like to include any additional details? (optional)</label>
         <textarea id="details" name="additional_details" rows="5" placeholder="Add context, timeline, links, or anything helpful."></textarea>
@@ -132,28 +127,14 @@ title: Contact
 <script>
   (function () {
     const form = document.getElementById('contactForm');
-    const reason = document.getElementById('reason');
-    const otherField = document.getElementById('otherField');
-    const otherReason = document.getElementById('otherReason');
     const status = document.getElementById('status');
     const successMessage = document.getElementById('successMessage');
     const submitBtn = document.getElementById('submitBtn');
-
-    function toggleOther() {
-      const isOther = reason.value === 'Other';
-      otherField.style.display = isOther ? 'block' : 'none';
-      otherReason.required = isOther;
-      if (!isOther) otherReason.value = '';
-    }
-
-    reason.addEventListener('change', toggleOther);
-    toggleOther();
 
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
       status.textContent = '';
 
-      // Enforce HTML5 validation before sending
       if (!form.reportValidity()) {
         return;
       }
@@ -170,25 +151,14 @@ title: Contact
           headers: { 'Accept': 'application/json' }
         });
 
-        const data = await response.json().catch(() => null);
-
         if (response.ok) {
           form.style.display = 'none';
           successMessage.style.display = 'block';
-          return;
-        }
-
-        // Show real Formspree error if available
-        if (data && data.errors && data.errors.length) {
-          status.textContent = data.errors.map(e => e.message).join(' ');
-        } else if (data && data.error) {
-          status.textContent = data.error;
         } else {
           status.textContent = 'Something went wrong. Please try again.';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit';
         }
-
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit';
 
       } catch (err) {
         status.textContent = 'Network error. Please try again.';
