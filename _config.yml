@@ -8,7 +8,7 @@ header_pages:
   - projects.md
   - testimonials.md
   - about.md
-  - contact.md
+  - contact-me.md
 
 collections:
   articles:
