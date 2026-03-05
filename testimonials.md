@@ -1,3 +1,8 @@
+---
+layout: page
+title: Resume
+---
+
 # Manager Testimonials
 
 <div style="border:1px solid #ddd; padding:16px; margin:16px 0; border-radius:10px;">
