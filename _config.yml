@@ -4,9 +4,10 @@ theme: minima
 
 header_pages:
   - resume.md
-  - projects.md
   - articles.md
+  - projects.md
   - testimonials.md
+  - about.md
 
 collections:
   articles:
