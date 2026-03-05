@@ -1,4 +1,8 @@
-# Resume
+---
+layout: page
+title: Resume
+---
+
 [Download my resume.](assets/Craig-Dermody-Resume.pdf)
 
 ## Experience
