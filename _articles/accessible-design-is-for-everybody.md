@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Accessible Design is for Everybody"
-date: 2026-03-04
+date: 2025-09-14
 tags: [accessibility, inclusive-design, public-sector-digital-services, data-visualization, usability]
 excerpt: "Accessibility improves public-sector digital services for disabled and non-disabled users alike by making tools clearer, more usable, and more resilient in real-world conditions."
 ---
