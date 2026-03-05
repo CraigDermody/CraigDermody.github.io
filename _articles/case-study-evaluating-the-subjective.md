@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Case Study: Evaluating the Subjective"
-date: 2026-03-05
+date: 2025-12-09
 tags: [analytics, public-sector, data-visualization]
 excerpt: "San Francisco’s Park Maintenance Evaluation program shows how to quantify a subjective goal by defining observable standards, scoring consistently, and reporting transparently—with clear limits and context."
 ---
