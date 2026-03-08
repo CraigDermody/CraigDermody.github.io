@@ -37,8 +37,9 @@ title: Craig Dermody
     font-size: 4.2em;
     line-height: 1.02;
     margin: 0;
-    font-weight: 800;
+    font-weight: 650; /* less bold */
     letter-spacing: -0.02em;
+    text-transform: uppercase;
   }
 
   .landing-subtitle {
@@ -126,7 +127,7 @@ title: Craig Dermody
     />
 
     <div class="title-block">
-      <h1 class="landing-name">Craig Dermody</h1>
+      <h1 class="landing-name">CRAIG DERMODY</h1>
       <div class="landing-subtitle">Analytics | Design | Improvement</div>
     </div>
   </div>
