@@ -7,26 +7,8 @@
 
     {%- include header.html -%}
 
-    <style>
-      /* Global font */
-      body {
-        font-family: Arial, sans-serif;
-      }
-
-      /* Global link color */
-      a {
-        color: #2c446f;
-      }
-      a:hover {
-        opacity: 0.85;
-      }
-
-      /* Ensure header links match too (Minima can override) */
-      .site-header .site-nav a,
-      .site-header a.page-link {
-        color: #2c446f !important;
-      }
-    </style>
+    <!-- Global site styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
