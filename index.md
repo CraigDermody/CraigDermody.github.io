@@ -17,7 +17,6 @@ title: Craig Dermody
     flex-wrap: wrap;
   }
 
-  /* Headshot tall enough to visually span the name + subtitle */
   .headshot {
     width: 132px;
     height: 132px;
@@ -37,9 +36,12 @@ title: Craig Dermody
     font-size: 4.2em;
     line-height: 1.02;
     margin: 0;
-    font-weight: 650; /* less bold */
+    font-weight: 650;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+
+    /* keep title on one line */
+    white-space: nowrap;
   }
 
   .landing-subtitle {
@@ -59,9 +61,10 @@ title: Craig Dermody
 
   .landing-actions {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;           /* keep buttons on one line */
     gap: 12px;
     margin-top: 10px;
+    align-items: center;
   }
 
   .landing-btn {
@@ -73,6 +76,9 @@ title: Craig Dermody
     color: #111;
     font-weight: 650;
     text-decoration: none;
+
+    /* prevent button text from wrapping */
+    white-space: nowrap;
   }
 
   .landing-btn:hover {
@@ -87,7 +93,6 @@ title: Craig Dermody
     padding: 16px 16px 14px 16px;
   }
 
-  /* Make the "Contact me" header match your subtitle styling */
   .reasons-title {
     font-size: 1.55em;
     margin: 0 0 10px 0;
