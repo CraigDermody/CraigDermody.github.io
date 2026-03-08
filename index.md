@@ -86,10 +86,12 @@ title: Craig Dermody
     padding: 16px 16px 14px 16px;
   }
 
-  .reasons h2 {
+  /* Make the "Contact me" header match your subtitle styling */
+  .reasons-title {
+    font-size: 1.55em;
     margin: 0 0 10px 0;
-    font-size: 1.15em;
-    font-weight: 800;
+    font-weight: 650;
+    opacity: 0.9;
   }
 
   .reasons ul {
@@ -130,7 +132,7 @@ title: Craig Dermody
   </div>
 
   <p class="landing-blurb">
-    I build data products that help public organizations make better decisions.
+    <strong>I use data and technology to improve public services and decision-making.</strong>
   </p>
 
   <div class="landing-actions">
@@ -141,7 +143,7 @@ title: Craig Dermody
   </div>
 
   <div class="reasons">
-    <h2>Reasons to contact me</h2>
+    <div class="reasons-title">Contact me</div>
     <ul>
       <li>
         I’m finishing a professional sabbatical and am actively searching for my next role.
