@@ -17,7 +17,7 @@ title: Craig Dermody
     flex-wrap: wrap;
   }
 
-  /* Make the headshot tall enough to visually span the name + subtitle */
+  /* Headshot tall enough to visually span the name + subtitle */
   .headshot {
     width: 132px;
     height: 132px;
@@ -78,37 +78,40 @@ title: Craig Dermody
     border-color: #bbb;
   }
 
-  /* Make the contact CTA pop more */
-  .landing-cta {
-    margin-top: 18px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 14px;
-    border-radius: 14px;
+  .reasons {
+    margin-top: 22px;
     border: 1px solid #eee;
+    border-radius: 14px;
     background: #fafafa;
+    padding: 16px 16px 14px 16px;
   }
 
-  .landing-cta-text {
-    font-size: 1.05em;
-    font-weight: 650;
-    opacity: 0.95;
+  .reasons h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.15em;
+    font-weight: 800;
   }
 
-  .landing-cta a {
-    display: inline-block;
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid #ddd;
-    background: #fff;
-    color: #111;
-    font-weight: 700;
+  .reasons ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  .reasons li {
+    margin: 10px 0;
+    line-height: 1.55;
+  }
+
+  .reasons a {
     text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+    font-weight: 700;
+    white-space: nowrap;
   }
 
-  .landing-cta a:hover {
-    border-color: #bbb;
+  .reasons a:hover {
+    border-bottom-color: #bbb;
   }
 </style>
 
@@ -137,8 +140,21 @@ title: Craig Dermody
     <a class="landing-btn" href="{{ '/projects/' | relative_url }}">See my projects</a>
   </div>
 
-  <div class="landing-cta">
-    <div class="landing-cta-text">Interested in collaboration?</div>
-    <a href="{{ '/contact/' | relative_url }}">Contact me</a>
+  <div class="reasons">
+    <h2>Reasons to contact me</h2>
+    <ul>
+      <li>
+        I’m finishing a professional sabbatical and am actively searching for my next role.
+        <a href="{{ '/contact/' | relative_url }}">Let’s talk</a>.
+      </li>
+      <li>
+        I provide pro bono support for local government and nonprofits developing data products and digital services.
+        <a href="{{ '/contact/' | relative_url }}">Let’s collaborate</a>.
+      </li>
+      <li>
+        I’m always open to network or mentor civic tech professionals working to improve government.
+        <a href="{{ '/contact/' | relative_url }}">Let’s connect</a>.
+      </li>
+    </ul>
   </div>
 </div>
