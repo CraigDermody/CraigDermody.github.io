@@ -2,8 +2,10 @@
 layout: default
 title: Resume
 ---
-I’m finishing a professional sabbatical and am actively searching for my next role. [Review my resume]({{ '/assets/Craig-Dermody-Resume.pdf' | relative_url }}) and [let’s talk]({{ '/contact/' | relative_url }}).
+I’m finishing a professional sabbatical and am actively searching for my next role.  
+**[Review my resume]({{ '/assets/Craig-Dermody-Resume.pdf' | relative_url }}) and [let’s talk]({{ '/contact/' | relative_url }}).**
 
+<div style="margin-top: 34px;"></div>
 ## Experience
 
 
@@ -46,6 +48,7 @@ City & County of San Francisco, Office of Economic & Workforce Development
 - <u>Project Spotlight</u>: Designed a practical guide and toolkit to safeguard data privacy and security.
 
 
+<div style="margin-top: 34px;"></div>
 ## Education
 
 **Western Governors University**  
@@ -63,8 +66,9 @@ City & County of San Francisco, Office of Economic & Workforce Development
 - Graduated *Summa Cum Laude* in the Honors Program with a 4.0 GPA.  
 - Selected as Valedictorian and delivered the Commencement Address.
 
----
 
+
+<div style="margin-top: 34px;"></div>
 ## Certifications
 
 **San Francisco State University**  
