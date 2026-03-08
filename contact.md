@@ -20,14 +20,10 @@ title: Contact
         <label for="reason">Reason for contact</label>
         <select id="reason" name="reason_for_contact" required>
           <option value="" selected disabled>Select one…</option>
-          <option value="Consulting/product development (local government, nonprofit, and academia)">
-            Consulting/product development (local government, nonprofit, and academia)
-          </option>
-          <option value="Consulting/product development (private sector)">
-            Consulting/product development (private sector)
-          </option>
           <option value="Employment opportunity">Employment opportunity</option>
-          <option value="Other">Other</option>
+          <option value="Networking/mentoring">Networking/mentoring</option>
+          <option value="Pro bono consultation/development">Pro bono consultation/development</option>
+          <option value="Something else">Something else</option>
         </select>
       </div>
 
@@ -71,7 +67,6 @@ title: Contact
 
   .field { margin-bottom: 16px; }
 
-  /* Ensure all fields render at the same width as the select */
   .field label {
     display: block;
     font-weight: 600;
@@ -85,7 +80,15 @@ title: Contact
     border-radius: 10px;
     padding: 10px 12px;
     font-size: 1rem;
+    font-family: inherit;
     background: #fff;
+  }
+
+  /* Make placeholder typography consistent between input + textarea */
+  .field input::placeholder,
+  .field textarea::placeholder {
+    font-size: 1rem;
+    font-family: inherit;
   }
 
   .field input:focus, .field select:focus, .field textarea:focus {
@@ -93,10 +96,7 @@ title: Contact
     border-color: #999;
   }
 
-  /* Disable the bottom-right resize handle on textarea */
-  .field textarea {
-    resize: none;
-  }
+  .field textarea { resize: none; }
 
   .actions {
     display: flex;
