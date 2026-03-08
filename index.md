@@ -11,6 +11,11 @@ title: Craig Dermody
       alt="Photo of Craig Dermody"
       style="width:240px; max-width:100%; border-radius:16px; border:1px solid #eee;"
     />
+
+    <div style="margin-top:14px; font-size:1.05em; line-height:1.55;">
+      <strong>Hi — I’m Craig Dermody.</strong> I’ve spent several years working inside local government, building dashboards,
+      data tools, and reporting workflows where trust, usability, and maintainability matter as much as the numbers.
+    </div>
   </div>
 
   <div style="flex:1; min-width:280px;">
@@ -19,14 +24,9 @@ title: Craig Dermody
       Data Analytics • Business Intelligence • Civic Technology
     </div>
 
-    <h1 style="margin: 0 0 10px 0; line-height:1.15;">
+    <h1 style="margin: 0 0 10px 0; line-height:1.12; font-size: 2.6em;">
       I build data products that help public organizations make better decisions — and actually get used.
     </h1>
-
-    <p style="font-size:1.05em; margin-top:0; margin-bottom:14px;">
-      <strong>Hi — I’m Craig Dermody.</strong> I’ve spent several years working inside local government, building dashboards,
-      data tools, and reporting workflows where trust, usability, and maintainability matter as much as the numbers.
-    </p>
 
     <p style="margin-top:0;">
       I am currently finishing a professional sabbatical while completing a graduate degree in data analytics and preparing for my next role in the public sector.
