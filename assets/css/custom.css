@@ -1,0 +1,136 @@
+/* ---------- Base typography & rhythm ---------- */
+:root {
+  --accent: #2c446f;
+  --border: #eee;
+  --muted: rgba(0,0,0,0.72);
+  --radius: 14px;
+  --pad: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 900px;
+}
+
+/* Global links */
+a {
+  color: var(--accent);
+}
+a:hover {
+  opacity: 0.85;
+}
+
+/* Headings: cleaner hierarchy */
+h1 {
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0.2em 0 0.35em 0;
+}
+h2 {
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+p {
+  margin: 0 0 0.9em 0;
+  max-width: 62ch;
+}
+
+/* Consistent section divider */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 24px 0;
+}
+
+/* ---------- Cards (reusable everywhere) ---------- */
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: var(--pad);
+}
+
+.card-muted {
+  background: #fafafa;
+}
+
+/* ---------- Buttons (reusable everywhere) ---------- */
+.btn-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: var(--accent);
+  font-weight: 650;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  border-color: #bbb;
+  background: rgba(44, 68, 111, 0.03);
+}
+
+/* ---------- Active nav indicator (best-effort without overriding header.html) ---------- */
+/* Minima doesn’t reliably add an active class; this highlights focus/hover nicely. */
+.site-header a.page-link:hover,
+.site-header a.page-link:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* ---------- Landing page helpers ---------- */
+.landing-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.landing-headshot {
+  width: 132px;
+  height: 132px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  flex: 0 0 132px;
+}
+
+.landing-titleblock {
+  min-width: 260px;
+  flex: 1;
+}
+
+.landing-title {
+  font-size: 4.2em;
+  font-weight: 650;
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.landing-subtitle {
+  font-size: 1.55em;
+  font-weight: 650;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.landing-blurb {
+  font-size: 1.15em;
+  max-width: 52ch;
+  margin-top: 18px;
+}
