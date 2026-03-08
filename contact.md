@@ -3,68 +3,51 @@ layout: default
 title: Contact
 ---
 
-<div class="contact-wrap">
-  <div class="contact-card">
-    <h2 style="margin-top:0;">Let’s connect.</h2>
-    <p style="margin-bottom:18px;">
-      I’m excited to hear from you, and will reach out as soon as possible.
-    </p>
+<div class="card" style="max-width: 760px; margin: 14px auto 0 auto;">
+  <h2 style="margin-top:0;">Let’s connect.</h2>
+  <p>
+    I’m excited to hear from you, and will reach out as soon as possible.
+  </p>
 
-    <form id="contactForm" method="POST" action="https://formspree.io/f/meerjdwl">
-      <div class="field">
-        <label for="email">Enter your email address</label>
-        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
-      </div>
-
-      <div class="field">
-        <label for="reason">Reason for contact</label>
-        <select id="reason" name="reason_for_contact" required>
-          <option value="" selected disabled>Select one…</option>
-          <option value="Employment opportunity">Employment opportunity</option>
-          <option value="Networking/mentoring">Networking/mentoring</option>
-          <option value="Pro bono consultation/development">Pro bono consultation/development</option>
-          <option value="Something else">Something else</option>
-        </select>
-      </div>
-
-      <div class="field">
-        <label for="details">Would you like to include any additional details? (optional)</label>
-        <textarea id="details" name="additional_details" rows="5" placeholder="Add context, timeline, links, or anything helpful."></textarea>
-      </div>
-
-      <input type="hidden" name="page" value="{{ page.url }}">
-      <input type="hidden" name="site" value="{{ site.title }}">
-
-      <div class="actions">
-        <button id="submitBtn" type="submit">Submit</button>
-        <span id="status" class="status" aria-live="polite"></span>
-      </div>
-    </form>
-
-    <div id="successMessage" class="success" style="display:none;">
-      <strong>Thanks — your message was sent.</strong><br>
-      I’ll contact you as soon as possible.
+  <form id="contactForm" method="POST" action="https://formspree.io/f/meerjdwl">
+    <div class="field">
+      <label for="email">Enter your email address</label>
+      <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
     </div>
+
+    <div class="field">
+      <label for="reason">Reason for contact</label>
+      <select id="reason" name="reason_for_contact" required>
+        <option value="" selected disabled>Select one…</option>
+        <option value="Employment opportunity">Employment opportunity</option>
+        <option value="Networking/mentoring">Networking/mentoring</option>
+        <option value="Pro bono consultation/development">Pro bono consultation/development</option>
+        <option value="Something else">Something else</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="details">Would you like to include any additional details? (optional)</label>
+      <textarea id="details" name="additional_details" rows="5" placeholder="Add context, timeline, links, or anything helpful."></textarea>
+    </div>
+
+    <input type="hidden" name="page" value="{{ page.url }}">
+    <input type="hidden" name="site" value="{{ site.title }}">
+
+    <div class="actions">
+      <button id="submitBtn" type="submit">Submit</button>
+      <span id="status" class="status" aria-live="polite"></span>
+    </div>
+  </form>
+
+  <div id="successMessage" class="card card-muted" style="display:none; margin-top: 16px;">
+    <strong>Thanks — your message was sent.</strong><br>
+    I’ll contact you as soon as possible.
   </div>
 </div>
 
 <style>
-  .contact-wrap {
-    margin-top: 14px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .contact-card {
-    width: 100%;
-    max-width: 760px;
-    border: 1px solid #eee;
-    border-radius: 14px;
-    padding: 22px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.04);
-    background: #fff;
-  }
-
+  /* Form-only styling (uses global font + link colors from custom.css) */
   .field { margin-bottom: 16px; }
 
   .field label {
@@ -84,7 +67,6 @@ title: Contact
     background: #fff;
   }
 
-  /* Make placeholder typography consistent between input + textarea */
   .field input::placeholder,
   .field textarea::placeholder {
     font-size: 1rem;
@@ -121,14 +103,6 @@ title: Contact
   }
 
   .status { opacity: 0.8; font-size: 0.95em; }
-
-  .success {
-    margin-top: 16px;
-    padding: 14px 14px;
-    border: 1px solid #e6e6e6;
-    border-radius: 12px;
-    background: #fafafa;
-  }
 </style>
 
 <script>
