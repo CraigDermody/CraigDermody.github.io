@@ -6,11 +6,7 @@ permalink: /articles/
 
 <div class="articles-intro">
   <p class="articles-lede">
-    <strong>Writing on public-sector analytics, data products, and service delivery.</strong>
-    These posts share practical lessons from building dashboards, reporting workflows, and decision-support tools in government—where usability, trust, and maintainability matter as much as the numbers.
-  </p>
-  <p class="articles-help">
-    Use topic filters or search to find posts by theme.
+    I build data tools and dashboards that help governments and organizations make better decisions. I specialize in business intelligence and dashboard design (Power BI), data modeling and ETL, reporting automation, public-sector performance measurement, and user-centered design—including accessibility and clear data communication. I’ve spent my whole career working inside local government, so my writing is focused on what actually works in practice. These posts share practical lessons I’ve picked up along the way. If something you read resonates with you, <a href="{{ '/contact/' | relative_url }}">let’s connect</a>.
   </p>
 </div>
 
@@ -20,8 +16,7 @@ permalink: /articles/
 
 <style>
   .articles-intro { margin: 6px 0 14px 0; }
-  .articles-lede { margin: 0 0 8px 0; line-height: 1.6; max-width: 54em; }
-  .articles-help { margin: 0 0 14px 0; opacity: 0.85; }
+  .articles-lede { margin: 0 0 14px 0; line-height: 1.6; max-width: 58em; }
 
   .topic-filters { margin: 10px 0 14px 0; }
   .filter-btn {
@@ -31,7 +26,7 @@ permalink: /articles/
     border: 1px solid #ddd;
     background: #fff;
     cursor: pointer;
-    font-weight: 650;
+    font-weight: 400; /* unbold */
   }
   .filter-btn:hover { border-color: #bbb; }
   .filter-btn.active { background: #f2f2f2; }
