@@ -4,13 +4,65 @@ title: Articles
 permalink: /articles/
 ---
 
-Insights on data analytics, public sector technology, dashboard design, and building data-driven organizations. These articles share practical lessons from working at the intersection of **data, technology, and government service delivery**.
+<div class="articles-intro">
+  <p class="articles-lede">
+    <strong>Writing on public-sector analytics, data products, and service delivery.</strong>
+    These posts share practical lessons from building dashboards, reporting workflows, and decision-support tools in government—where usability, trust, and maintainability matter as much as the numbers.
+  </p>
+  <p class="articles-help">
+    Use topic filters or search to find posts by theme.
+  </p>
+</div>
 
-Filter by topic or search to find posts by theme.
+<div id="topic-filters" class="topic-filters"></div>
+<div id="search-container" class="search-container"></div>
+<div id="articles-feed" class="articles-feed"></div>
 
-<div id="topic-filters" style="margin: 12px 0 14px 0;"></div>
-<div id="search-container"></div>
-<div id="articles-feed"></div>
+<style>
+  .articles-intro { margin: 6px 0 14px 0; }
+  .articles-lede { margin: 0 0 8px 0; line-height: 1.6; max-width: 54em; }
+  .articles-help { margin: 0 0 14px 0; opacity: 0.85; }
+
+  .topic-filters { margin: 10px 0 14px 0; }
+  .filter-btn {
+    margin: 6px 8px 0 0;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 650;
+  }
+  .filter-btn:hover { border-color: #bbb; }
+  .filter-btn.active { background: #f2f2f2; }
+
+  .search-container { margin: 0 0 14px 0; }
+  .search-input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 520px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  .search-input:focus { outline: none; border-color: #bbb; }
+
+  .article-card {
+    border: 1px solid #eee;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 12px 0;
+    background: #fff;
+  }
+  .article-date { font-size: 0.95em; opacity: 0.75; }
+  .article-title { font-size: 1.15em; font-weight: 800; margin-top: 4px; }
+  .article-title a { text-decoration: none; }
+  .article-title a:hover { text-decoration: underline; }
+  .article-excerpt { margin-top: 6px; line-height: 1.55; }
+  .article-tags { margin-top: 10px; font-size: 0.9em; opacity: 0.8; }
+  .empty-state { opacity: 0.7; margin-top: 12px; }
+</style>
 
 <script>
 window.__ARTICLES__ = [
@@ -19,7 +71,8 @@ window.__ARTICLES__ = [
   {
     title: {{ a.title | jsonify }},
     url: {{ a.url | relative_url | jsonify }},
-    date: {{ a.date | date: "%Y-%m-%d" | jsonify }},
+    dateISO: {{ a.date | date: "%Y-%m-%d" | jsonify }},
+    dateDisplay: {{ a.date | date: "%b %-d, %Y" | jsonify }},
     excerpt: {{ a.excerpt | default: "" | strip_html | strip_newlines | jsonify }},
     tags: {{ a.tags | default: empty | jsonify }}
   }{% unless forloop.last %},{% endunless %}
@@ -31,10 +84,8 @@ window.__ARTICLES__ = [
   const searchContainer = document.getElementById("search-container");
   const feedEl = document.getElementById("articles-feed");
 
-  // Build the search box via JS (avoids Markdown/HTML rendering quirks)
   searchContainer.innerHTML = `
-    <input id="article-search" type="text" placeholder="Search articles..."
-      style="display:block; box-sizing:border-box; width:100%; max-width:520px; padding:10px 12px; border-radius:10px; border:1px solid #ddd; margin:0 0 14px 0;">
+    <input id="article-search" class="search-input" type="text" placeholder="Search articles..." aria-label="Search articles">
   `;
   const searchEl = document.getElementById("article-search");
 
@@ -53,8 +104,7 @@ window.__ARTICLES__ = [
     const buttons = ["all", ...tagList].map(tag => {
       const isActive = tag === activeTag;
       return `
-        <button data-tag="${tag}"
-          style="margin: 6px 8px 0 0; padding: 6px 10px; border-radius: 999px; border: 1px solid #ddd; background: ${isActive ? "#f2f2f2" : "white"}; cursor: pointer;">
+        <button class="filter-btn ${isActive ? "active" : ""}" data-tag="${tag}">
           ${tag === "all" ? "All topics" : prettyTag(tag)}
         </button>
       `;
@@ -87,22 +137,26 @@ window.__ARTICLES__ = [
       : filteredByTag;
 
     if (filtered.length === 0) {
-      feedEl.innerHTML = `<div style="opacity:0.7; margin-top:12px;">No articles match this filter yet.</div>`;
+      feedEl.innerHTML = `<div class="empty-state">No articles match this filter yet.</div>`;
       return;
     }
 
-    feedEl.innerHTML = filtered.map(p => `
-      <div style="border:1px solid #eee; padding:14px; border-radius:10px; margin: 12px 0;">
-        <div style="font-size:0.95em; opacity:0.75;">${p.date}</div>
-        <div style="font-size:1.15em; font-weight:700; margin-top:4px;">
-          <a href="${p.url}">${p.title}</a>
+    feedEl.innerHTML = filtered.map(p => {
+      const tagsHtml = (p.tags && p.tags.length)
+        ? `<div class="article-tags">${p.tags.map(t => `#${prettyTag(t)}`).join("  ")}</div>`
+        : "";
+
+      return `
+        <div class="article-card">
+          <div class="article-date">${p.dateDisplay || p.dateISO || ""}</div>
+          <div class="article-title">
+            <a href="${p.url}">${p.title}</a>
+          </div>
+          <div class="article-excerpt">${p.excerpt || ""}</div>
+          ${tagsHtml}
         </div>
-        <div style="margin-top:6px;">${p.excerpt || ""}</div>
-        <div style="margin-top:10px; font-size:0.9em; opacity:0.8;">
-          ${p.tags.map(t => `#${prettyTag(t)}`).join("  ")}
-        </div>
-      </div>
-    `).join("");
+      `;
+    }).join("");
   }
 
   renderFilters();
