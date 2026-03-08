@@ -2,8 +2,7 @@
 layout: default
 title: Resume
 ---
-
-[Download my resume.](assets/Craig-Dermody-Resume.pdf)
+I’m finishing a professional sabbatical and am actively searching for my next role. [Review my resume]({{ '/assets/Craig-Dermody-Resume.pdf' | relative_url }}) and [let’s talk]({{ '/contact/' | relative_url }}).
 
 ## Experience
 
