@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Testimonials
+title: Reviews
 ---
 
-# Manager Testimonials
+# Project Manager Testimonials
 
 <div style="border:1px solid #ddd; padding:16px; margin:16px 0; border-radius:10px;">
 <p>“Craig finished everything on time, within his hours budget, and proactively communicated with his other managers about his priorities and availability during the sprint. Craig excelled at this time-sensitive and time-intensive project.”</p>
