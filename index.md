@@ -54,6 +54,22 @@ title: Craig Dermody
   .landing-btn:hover {
     border-color: #bbb;
   }
+
+  .landing-contact {
+    margin-top: 18px;
+    font-size: 1.05em;
+    opacity: 0.9;
+  }
+
+  .landing-contact a {
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+  }
+
+  .landing-contact a:hover {
+    border-bottom-color: #bbb;
+  }
 </style>
 
 <div class="landing">
@@ -66,9 +82,13 @@ title: Craig Dermody
   </p>
 
   <div class="landing-actions">
-    <a class="landing-btn" href="{{ '/resume/' | relative_url }}">Read my resume</a>
+    <a class="landing-btn" href="{{ '/resume/' | relative_url }}">Review my resume</a>
     <a class="landing-btn" href="{{ '/articles/' | relative_url }}">Browse my articles</a>
+    <a class="landing-btn" href="{{ '/testimonials/' | relative_url }}">Read my reviews</a>
     <a class="landing-btn" href="{{ '/projects/' | relative_url }}">See my projects</a>
-    <a class="landing-btn" href="{{ '/testimonials/' | relative_url }}">See my reviews</a>
+  </div>
+
+  <div class="landing-contact">
+    Interested in collaboration? <a href="{{ '/contact/' | relative_url }}">Contact me</a>
   </div>
 </div>
