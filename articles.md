@@ -4,20 +4,15 @@ title: Articles
 permalink: /articles/
 ---
 
-<div class="articles-intro">
-  <p class="articles-lede">
-    I build data tools and dashboards that help governments make better decisions. My writing focuses on what actually works in practice—BI and dashboard design, data modeling and ETL, reporting automation, performance measurement, and user-centered design. If something here resonates, <a href="{{ '/contact/' | relative_url }}">let’s connect</a>.
-  </p>
-</div>
+<p>
+  I build data tools and dashboards that help governments make better decisions. My writing focuses on what actually works in practice—BI and dashboard design, data modeling and ETL, reporting automation, performance measurement, and user-centered design. If something here resonates, <a href="{{ '/contact/' | relative_url }}">let’s connect</a>.
+</p>
 
-<div id="search-container" class="search-container"></div>
-<div id="articles-feed" class="articles-feed"></div>
+<div id="search-container" style="margin: 12px 0 14px 0;"></div>
+<div id="articles-feed"></div>
 
 <style>
-  .articles-intro { margin: 6px 0 14px 0; }
-  .articles-lede { margin: 0 0 14px 0; line-height: 1.6; max-width: 58em; }
-
-  .search-container { margin: 0 0 14px 0; }
+  /* Page-specific (kept minimal; uses global styles from custom.css) */
   .search-input {
     display: block;
     box-sizing: border-box;
@@ -26,18 +21,13 @@ permalink: /articles/
     padding: 10px 12px;
     border-radius: 10px;
     border: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fff;
   }
   .search-input:focus { outline: none; border-color: #bbb; }
 
-  .article-card {
-    border: 1px solid #eee;
-    padding: 14px;
-    border-radius: 10px;
-    margin: 12px 0;
-    background: #fff;
-  }
-
-  .article-title { font-size: 1.15em; font-weight: 800; margin-top: 0; }
+  .article-title { font-size: 1.15em; font-weight: 800; margin: 0; }
   .article-title a { text-decoration: none; }
   .article-title a:hover { text-decoration: underline; }
 
@@ -91,7 +81,7 @@ window.__ARTICLES__ = [
     }
 
     feedEl.innerHTML = filtered.map(p => `
-      <div class="article-card">
+      <div class="card" style="margin: 12px 0;">
         <div class="article-title">
           <a href="${p.url}">${p.title}</a>
         </div>
