@@ -5,9 +5,9 @@ title: Contact
 
 <div class="contact-wrap">
   <div class="contact-card">
-    <h2 style="margin-top:0;">Contact</h2>
+    <h2 style="margin-top:0;">Let’s connect.</h2>
     <p style="margin-bottom:18px;">
-      Send a message using the form below. I’ll get back to you as soon as possible.
+      I’m excited to hear from you, and will reach out as soon as possible.
     </p>
 
     <form id="contactForm" method="POST" action="https://formspree.io/f/meerjdwl">
@@ -71,6 +71,7 @@ title: Contact
 
   .field { margin-bottom: 16px; }
 
+  /* Ensure all fields render at the same width as the select */
   .field label {
     display: block;
     font-weight: 600;
@@ -79,6 +80,7 @@ title: Contact
 
   .field input, .field select, .field textarea {
     width: 100%;
+    box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 10px 12px;
@@ -89,6 +91,11 @@ title: Contact
   .field input:focus, .field select:focus, .field textarea:focus {
     outline: none;
     border-color: #999;
+  }
+
+  /* Disable the bottom-right resize handle on textarea */
+  .field textarea {
+    resize: none;
   }
 
   .actions {
