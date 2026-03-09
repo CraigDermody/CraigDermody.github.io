@@ -2,6 +2,10 @@
 layout: default
 title: Resume
 ---
+<style>
+  /* Resume-only: tighten the gap between the employer/location line and the bullets */
+  p + ul { margin-top: -10px; }
+</style>
 
 <div class="card card-muted">
   <p style="margin: 0;">
