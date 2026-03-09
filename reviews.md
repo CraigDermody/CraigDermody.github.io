@@ -47,7 +47,6 @@ title: Reviews
   </p>
 </div>
 
-<hr>
 
 ## Workshop Attendee Feedback
 
