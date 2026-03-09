@@ -26,8 +26,6 @@ layout: default
   /* Minimal, consistent typography for articles */
   .article-meta { opacity: 0.75; font-size: 0.95em; margin-top: 6px; }
   .article-author { font-weight: 600; }
-  .article-date { }
-  .article-tags { margin-top: 10px; font-size: 0.9em; opacity: 0.85; }
   .article-nav { display:flex; gap:12px; justify-content:space-between; margin-top: 28px; padding-top: 18px; border-top: 1px solid #eee; }
   .article-nav a { text-decoration:none; }
   .article-nav .nav-card { border:1px solid #eee; border-radius:10px; padding:12px 14px; width:100%; }
@@ -43,14 +41,6 @@ layout: default
   <div class="article-author">{{ site.author }}</div>
   <div class="article-date">{{ page.date | date: "%B %-d, %Y" }}</div>
 </div>
-
-{% if page.tags %}
-  <div class="article-tags">
-    {% for t in page.tags %}
-      <span>#{{ t | replace: "-", " " }}</span>{% unless forloop.last %}&nbsp;&nbsp;{% endunless %}
-    {% endfor %}
-  </div>
-{% endif %}
 
 <hr style="margin: 18px 0; border: none; border-top: 1px solid #eee;">
 
