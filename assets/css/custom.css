@@ -38,7 +38,6 @@ p {
   margin: 0 0 0.9em 0;
 }
 
-
 /* Consistent section divider */
 hr {
   border: none;
@@ -84,7 +83,6 @@ hr {
 }
 
 /* ---------- Active nav indicator (best-effort without overriding header.html) ---------- */
-/* Minima doesn’t reliably add an active class; this highlights focus/hover nicely. */
 .site-header a.page-link:hover,
 .site-header a.page-link:focus {
   text-decoration: underline;
@@ -134,7 +132,19 @@ hr {
   margin-top: 18px;
 }
 
-/* Tighten spacing before bullet lists (e.g., after employer/location lines) */
+/* ---------- Lists: tighten spacing, especially after employer/location lines ---------- */
 ul {
-  margin-top: 0px;
+  margin-top: 0.4em;   /* default list spacing elsewhere */
+  margin-bottom: 0.9em;
+  padding-left: 1.2em;
+}
+
+/* When a list immediately follows a paragraph, remove the extra gap */
+p + ul {
+  margin-top: 0;
+}
+
+/* Optional: tighten spacing between bullet items a touch (set to 0 if you want very tight) */
+li {
+  margin-bottom: 0.2em;
 }
