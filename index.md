@@ -29,11 +29,11 @@ title: Craig Dermody
   <div class="landing-subtitle" style="font-size: 1.35em; margin-top: 0;">Contact me</div>
   <ul style="margin: 10px 0 0 0; padding-left: 18px;">
     <li>
-      I’m finishing a professional sabbatical and am actively searching for my next role.
+      I’m finishing up a professional sabbatical and am actively searching for my next opportunity.
       <a href="{{ '/contact/' | relative_url }}">Let’s talk</a>.
     </li>
     <li>
-      I provide pro bono support for local governments developing data products and digital services.
+      I provide pro bono support for local governments developing data products/digital services.
       <a href="{{ '/contact/' | relative_url }}">Let’s collaborate</a>.
     </li>
     <li>
