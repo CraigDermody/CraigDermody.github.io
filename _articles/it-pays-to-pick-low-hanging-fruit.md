@@ -2,7 +2,6 @@
 layout: article
 title: "It Pays to Pick Low-Hanging Fruit"
 date: 2026-01-26
-tags: [analytics, public-sector, data-visualization]
 excerpt: "Basic, public-sector-tailored technical training can deliver outsized time savings and lasting internal capacity, often with better ROI than new tools or consultant projects."
 ---
 
@@ -13,8 +12,6 @@ Most local governments are not starting from zero. They already pay for spreadsh
 When internal capability is weak, modernization becomes brittle. A consultant builds a dashboard that no one can maintain. A new form goes live, but design flaws create avoidable errors and extra calls from the public. A project drags because nobody has a consistent method for gathering requirements. The organization spends money on technology while daily work still runs on manual effort, workarounds, and a few helpful employees who quietly become bottlenecks.
 
 That is why I think training is often misunderstood in government. It is usually framed as professional development, something nice to offer when budgets and schedules allow. In practice, it can be operational infrastructure.
-
-## The failure mode is not a lack of ambition
 
 A lot of modernization work is treated as a procurement problem. Acquire the right platform, outsource the build, and the organization will get more efficient. The problem is that software does not automatically create internal competence.
 
@@ -28,7 +25,7 @@ The third is the hidden cost of low capability. Manual reporting, copied spreads
 
 This is also why generic training so often falls flat. Off-the-shelf learning platforms can be useful references, but government staff do not work in generic environments. They work with privacy constraints, [accessibility requirements](https://www.w3.org/WAI/standards-guidelines/wcag/), legacy systems, procurement rules, and cross-department workflows. A course that ignores those realities may be technically correct and still fail to change how work gets done.
 
-## What works better
+### What works better
 
 A better approach is to treat training as capacity-building infrastructure. That means designing it less like a perk and more like a service that strengthens the organization’s ability to do its own work well.
 
@@ -40,7 +37,7 @@ Second, start with skills that remove frequent, low-level friction. The goal is 
 
 Third, prioritize live learning instead of relying only on self-paced materials. Self-paced resources are useful, but they are usually weak at building community, shared language, and follow-through. Live training creates feedback loops. Instructors learn where people get stuck. Staff realize other teams are dealing with the same problems. Good practices start to spread socially, not just individually.
 
-## The most credible case for training is a conservative one
+### The most credible case for training is a conservative one
 
 When I used to manage San Francisco’s technical training program for employees, Data Academy, I recruited volunteer instructors, developed new courses, scheduled trainings, analyzed attendee satisfaction, and tracked post-training outcomes. I also personally trained more than 500 employees and, at the time, was the highest-rated instructor.
 
@@ -50,7 +47,7 @@ That number worked because it was conservative and easy to explain. It also had 
 
 That combination turned out to be the most persuasive. Use a simple ROI measure that leadership can understand, but do not oversell it. Pair it with concrete examples of better work.
 
-## Practical choices that make programs stick
+### Practical choices that make programs stick
 
 The structure of the program matters as much as the topic list.
 
@@ -60,7 +57,7 @@ The instructor model matters too. Volunteer instructors can be force multipliers
 
 And the curriculum should stay grounded. If you want early wins, start with high-frequency skills: spreadsheet efficiency, data cleaning basics, [plain-language](https://www.plainlanguage.gov/) form design, accessibility basics, requirements gathering, and dashboard fundamentals. The common thread is not technical sophistication. It is reducing friction in everyday public-sector work.
 
-## Where these programs usually go wrong
+### Where these programs usually go wrong
 
 Most internal training programs do not fail because people dislike learning. They fail because the design assumptions are off.
 
@@ -68,7 +65,7 @@ Sometimes the content starts too advanced, which excludes most staff from the be
 
 Those are management problems more than teaching problems.
 
-## A more realistic view of modernization
+### A more realistic view of modernization
 
 Local government does need good systems, strong vendors, and serious investment. But modernization is not just something you buy. It is something you make possible by building internal capability.
 
