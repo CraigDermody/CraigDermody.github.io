@@ -1,10 +1,9 @@
 ---
-
 layout: article
 title: "Accessible Design is for Everybody"
 date: 2025-09-14
 excerpt: "Accessibility improves public-sector digital services for disabled and non-disabled users alike by making tools clearer, more usable, and more resilient in real-world conditions."
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 Accessibility often gets framed in public-sector technology as a requirement to satisfy at the end of a project. It is treated as a compliance review, a specialist concern, or a final check before launch. Those things matter, but that framing is too narrow. In practice, accessible design usually makes systems work better for everyone.
 
