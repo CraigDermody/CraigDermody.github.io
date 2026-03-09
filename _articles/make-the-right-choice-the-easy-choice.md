@@ -2,7 +2,6 @@
 layout: article
 title: "Make the Right Choice the Easy Choice"
 date: 2026-02-11
-tags: [behavioral-insights, service-design, UX/UI]
 excerpt: "Many public-sector service problems are not caused by bad policy, but by avoidable friction in how people are asked to act."
 ---
 
