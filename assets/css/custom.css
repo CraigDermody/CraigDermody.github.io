@@ -148,3 +148,9 @@ p + ul {
 li {
   margin-bottom: 0em;
 }
+
+.site-header a.page-link.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
