@@ -3,117 +3,76 @@ layout: article
 title: "It Pays to Pick Low-Hanging Fruit"
 date: 2026-01-26
 tags: [analytics, public-sector, data-visualization]
-excerpt: "Basic, public-sector-tailored technical training can deliver outsized time savings and lasting internal capacity—often with better ROI than new tools or consultant projects."
+excerpt: "Basic, public-sector-tailored technical training can deliver outsized time savings and lasting internal capacity, often with better ROI than new tools or consultant projects."
 ---
 
-## Introduction
+Local government has a reputation for being slow to adopt new technology. The usual responses are familiar: buy a new system, hire a consultant, launch a modernization initiative. Sometimes those are the right moves. But they can also overlook one of the simplest, highest-return investments available to most agencies: teaching staff to use the tools they already have well.
 
-Local government has a reputation for being slow to adopt new technology. The usual responses are predictable: buy a new system, hire a consultant, launch a modernization initiative. Those efforts can be necessary. But they often skip the highest-ROI lever available to most agencies: training staff to use the tools they already have.
+Most local governments are not starting from zero. They already pay for spreadsheets, GIS platforms, form builders, collaboration tools, business intelligence software, and case management systems. The deeper problem usually is not access to tools. It is uneven capability, low confidence, and a lack of shared habits for using those tools effectively.
 
-Many local governments already pay for powerful software—Excel, GIS platforms, form builders, collaboration suites, business intelligence tools, case management systems. The problem is rarely that the tools do not exist. The problem is that capability is uneven, confidence is low, and teams lack the shared habits needed to use these tools well.
+When internal capability is weak, modernization becomes brittle. A consultant builds a dashboard that no one can maintain. A new form goes live, but design flaws create avoidable errors and extra calls from the public. A project drags because nobody has a consistent method for gathering requirements. The organization spends money on technology while daily work still runs on manual effort, workarounds, and a few helpful employees who quietly become bottlenecks.
 
-When internal capability is weak, modernization becomes brittle. A consultant delivers a dashboard, and no one can maintain it. A new form is launched, but design mistakes create avoidable errors and call volume. A project stalls because no one has a shared method for gathering requirements. The organization spends money on technology, but the daily work still runs on manual effort, workarounds, and a few “power users” who become bottlenecks.
+That is why I think training is often misunderstood in government. It is usually framed as professional development, something nice to offer when budgets and schedules allow. In practice, it can be operational infrastructure.
 
-A basic internal training program can change that dynamic quickly. Done well, it produces compounding returns: time saved, fewer errors, better service delivery, better cross-team collaboration, and stronger retention because staff feel supported and capable.
+## The failure mode is not a lack of ambition
 
-## The Problem
+A lot of modernization work is treated as a procurement problem. Acquire the right platform, outsource the build, and the organization will get more efficient. The problem is that software does not automatically create internal competence.
 
-Governments often treat modernization as a procurement problem: acquire the right tool, outsource the build, and the organization will become more efficient. This creates three recurring issues.
+Three issues tend to follow.
 
-First is consultant dependency. External consultants can deliver real value, but when the work is not paired with internal skill-building, the result is a fragile product. If no one can update the dashboard, change the logic, fix the data pipeline, or adjust the form, the organization is locked into ongoing external support. Even small changes become expensive.
+The first is consultant dependency. Consultants can absolutely deliver value, especially when specialized technical work is needed. But if a department never builds the ability to update, troubleshoot, or adapt what was delivered, even minor changes become expensive and slow. The result is not modernization so much as managed dependency.
 
-Second is uneven skill distribution. In most departments, a few people know how to do basic automation, data cleaning, or reporting well. They become unofficial IT, fielding requests and patching processes. Everyone else either waits for help or avoids improving workflows because they assume it requires a major project.
+The second is uneven skill distribution. In many departments, a small number of people know how to clean data, automate recurring work, or build a usable report. Everyone else either routes requests to them or avoids improving the process at all. That kind of informal specialization may keep the system running, but it does not scale.
 
-Third is the hidden cost of low capability. Manual processes take longer and fail more often. Reports are recreated from scratch each month. Forms are built in ways that generate avoidable errors. Data is copied and pasted between spreadsheets with inconsistent definitions. None of this shows up as a line item in a budget, but it silently consumes staff time and degrades quality.
+The third is the hidden cost of low capability. Manual reporting, copied spreadsheets, inconsistent definitions, poorly designed forms, and recurring rework do not always show up as a discrete budget item. They still consume real staff time and lower the quality of service.
 
-Generic training rarely solves these problems. Off-the-shelf learning platforms can be useful references, but they often fail to change workflows in public-sector environments because they do not match the reality of government: privacy constraints, accessibility requirements, procurement limitations, legacy systems, and work that spans many departments. Self-paced learning also tends to be isolating. People may “watch a course,” but without community and reinforcement, skills decay and practices do not spread.
+This is also why generic training so often falls flat. Off-the-shelf learning platforms can be useful references, but government staff do not work in generic environments. They work with privacy constraints, [accessibility requirements](https://www.w3.org/WAI/standards-guidelines/wcag/), legacy systems, procurement rules, and cross-department workflows. A course that ignores those realities may be technically correct and still fail to change how work gets done.
 
-The result is a familiar pattern: local government invests in tools and external projects, but internal capacity remains thin. That is how organizations end up with expensive systems and the same operational bottlenecks.
+## What works better
 
-## A Better Approach
+A better approach is to treat training as capacity-building infrastructure. That means designing it less like a perk and more like a service that strengthens the organization’s ability to do its own work well.
 
-The alternative is to treat training as capacity-building infrastructure. Instead of relying primarily on external capability, agencies can build internal competence and a shared culture of practical improvement.
+In my experience, three design choices matter most.
 
-In my experience, the three most critical components of a high-ROI training program are:
+First, tailor the content to public-sector realities and use internal experts when possible. Internal instructors tend to be more credible because they understand the systems, the constraints, and the work itself. They are not teaching abstract software features. They are teaching people how to do better government work with the tools already on their desks.
 
-1) **Tailor the content to public-sector realities and use internal experts whenever possible.**  
-The most effective training content reflects the actual constraints, systems, and workflows staff face. Volunteer instructors who work inside the organization bring credibility and specificity. They teach the tool in the context of real government work, not generic examples.
+Second, start with skills that remove frequent, low-level friction. The goal is not to turn every employee into a developer or data engineer. It is to reduce repetitive work, prevent avoidable errors, and improve everyday outputs. Classes on spreadsheet efficiency, online form design, basic [requirements gathering](https://www.iiba.org/business-analysis-standards-and-resources/business-analysis-core-standard/), or dashboard communication often create more value than advanced technical topics because they apply across a broad range of staff roles.
 
-2) **Focus on low-hanging fruit that pays back immediately.**  
-The goal is not to turn everyone into a software developer. The goal is to remove high-frequency friction. Classes on time-saving Excel techniques, clear online form design, or basic requirements gathering often save more time than advanced tools because they apply to everyone’s daily work.
+Third, prioritize live learning instead of relying only on self-paced materials. Self-paced resources are useful, but they are usually weak at building community, shared language, and follow-through. Live training creates feedback loops. Instructors learn where people get stuck. Staff realize other teams are dealing with the same problems. Good practices start to spread socially, not just individually.
 
-3) **Emphasize face-to-face learning to build a culture and a community of practice.**  
-Self-paced platforms are scalable but isolating. Live training creates shared language, peer support, and cross-department relationships. It also creates a feedback loop: instructors learn what staff struggle with, and future training becomes more relevant.
+## The most credible case for training is a conservative one
 
-These three pillars shift training from “professional development” as a perk into training as an operational strategy. The goal is not just knowledge transfer. It is building organizational capability and reducing dependency.
+When I used to manage San Francisco’s technical training program for employees, Data Academy, I recruited volunteer instructors, developed new courses, scheduled trainings, analyzed attendee satisfaction, and tracked post-training outcomes. I also personally trained more than 500 employees and, at the time, was the highest-rated instructor.
 
-## Practical Techniques
+The easiest way to justify the program was not to make sweeping claims about innovation. It was to ask a practical question three months after a training: how much time have you saved in your work because of what you learned? Using internal salary averages, we found that a typical training produced time savings equivalent to just under $2,000 annually per attendee.
 
-A training program succeeds when it is designed like a service: clear purpose, strong delivery, continuous improvement, and measurable outcomes. Here are practical techniques that make the difference.
+That number worked because it was conservative and easy to explain. It also had limits. Time saved is only part of the value. Training also improved work quality: cleaner data, fewer errors, clearer reporting, stronger requirements, and more usable forms. We tried to make those gains visible through case studies and showcases of attendee work after training, rather than pretending they could all be reduced to a single clean metric.
 
-### Start with a focused pilot and scale deliberately
+That combination turned out to be the most persuasive. Use a simple ROI measure that leadership can understand, but do not oversell it. Pair it with concrete examples of better work.
 
-Begin with a short series—six to ten courses over a quarter—rather than launching a large curriculum all at once. Offer multiple levels so beginners are not intimidated and more advanced staff still see value. Add office hours or “clinics” where attendees can bring real work problems and apply what they learned.
+## Practical choices that make programs stick
 
-This structure matters because training without reinforcement often becomes entertainment. Staff leave feeling inspired but return to old workflows. Clinics and office hours bridge the gap between learning and application.
+The structure of the program matters as much as the topic list.
 
-### Build an internal instructor model
+A focused pilot is usually better than a large launch. A short series of courses over a quarter gives you enough room to test demand, improve delivery, and learn what staff actually need. Reinforcement matters too. Office hours, clinics, templates, and follow-up sessions help close the gap between learning something and applying it on the job. Otherwise, training can become a brief moment of enthusiasm followed by a return to old habits.
 
-Volunteer instructors are force multipliers. They spread skills while strengthening internal networks. But volunteers need support: lesson plans, templates, datasets, and facilitation structure so teaching does not become a burden that only a few people can sustain.
+The instructor model matters too. Volunteer instructors can be force multipliers, but only if the organization supports them. Reusable lesson plans, examples, facilitation structure, and visible recognition make it easier to build a durable program rather than leaning on one generous expert until they burn out.
 
-Recognition is also important. Instructors should receive visibility and credit—through leadership acknowledgement, performance evaluations, or internal awards—because they are contributing to the organization’s capacity, not just “doing a nice extra thing.”
+And the curriculum should stay grounded. If you want early wins, start with high-frequency skills: spreadsheet efficiency, data cleaning basics, [plain-language](https://www.plainlanguage.gov/) form design, accessibility basics, requirements gathering, and dashboard fundamentals. The common thread is not technical sophistication. It is reducing friction in everyday public-sector work.
 
-### Teach low-hanging skills that reduce repetitive work
+## Where these programs usually go wrong
 
-If you want fast ROI, start with skills that remove recurring manual effort and reduce errors:
+Most internal training programs do not fail because people dislike learning. They fail because the design assumptions are off.
 
-- Excel and spreadsheet efficiency: lookups, pivots, basic data cleaning, error checks, Power Query fundamentals
-- Online form design: plain language, accessibility basics, validation rules, reducing errors at the source
-- Requirements gathering: stakeholder interviews, user stories, acceptance criteria, scoping and prioritization
-- Reporting and dashboard basics: defining metrics, choosing the right chart, writing labels people can understand
+Sometimes the content starts too advanced, which excludes most staff from the beginning. Sometimes the program focuses on attendance because attendance is easy to report, even though it says very little about operational impact. Sometimes the examples are too generic to map onto government work. Sometimes managers encourage people to attend but not to change anything afterward. And sometimes the whole effort depends on one heroic instructor, which makes the program fragile by design.
 
-The common theme is not “tech sophistication.” It is reducing friction in everyday work.
+Those are management problems more than teaching problems.
 
-### Prioritize live interaction and peer community
+## A more realistic view of modernization
 
-Live training is more expensive than self-paced platforms, but it pays off because it changes behavior. When employees learn together, they create shared norms and a support network. They also learn that others have similar problems, which reduces isolation and increases adoption of better practices.
+Local government does need good systems, strong vendors, and serious investment. But modernization is not just something you buy. It is something you make possible by building internal capability.
 
-A program can still record sessions and publish resources, but recordings should supplement—not replace—interactive learning.
+That is why I think staff training deserves more attention than it usually gets. It reduces dependency, improves the sustainability of technical work, and helps agencies get more value from tools they already own. Just as important, it builds confidence and shared problem-solving habits inside the organization.
 
-### Measure ROI credibly without overclaiming
-
-Training programs often struggle to justify staff time. The best approach is to use conservative, understandable ROI measures and pair them with qualitative evidence.
-
-I used to manage San Francisco’s technical training program for employees, called Data Academy. I recruited volunteer instructors, developed new courses, scheduled trainings, analyzed attendee satisfaction, and tracked post-training outcomes. I also led trainings for over 500 employees and was the highest-rated instructor at the time.
-
-The simplest way we justified free trainings—despite the real staff time required to administer the program, teach, and attend—was to ask attendees a practical question three months later: **how much time have you saved in your work because of what you learned?** Using internal salary averages, we found that a typical training produced time savings equivalent to just under **$2,000 annually** per attendee.
-
-That metric was deliberately conservative and easy for leadership to understand. It also had an important limitation: it did not capture quality improvements. Time saved is only one form of value. Training also improved the quality of staff work—cleaner data, fewer errors, clearer reporting, better requirements, more usable forms. We tried to capture those benefits through case studies and showcases of attendee work after trainings, which made the impact visible in a way a single number could not.
-
-This combination—conservative quantified ROI plus concrete examples—was the most credible way to demonstrate value without resorting to inflated claims.
-
-## Common Mistakes
-
-Internal training programs fail when they drift into common traps.
-
-**Starting too advanced.** If the first offerings focus on specialized tools or niche topics, most staff will not benefit. High-ROI programs start with broad, high-frequency skills.
-
-**Treating training as a one-time event.** Without reinforcement, skills decay. Programs need follow-ups, office hours, templates, and opportunities to apply learning.
-
-**Relying only on self-paced platforms.** Self-paced learning is useful for reference, but it rarely builds culture or sustained workflow change. Live learning creates shared norms and community.
-
-**Measuring success only by attendance.** Attendance is not impact. The goal is applied outcomes: time saved, fewer errors, faster cycle times, improved service delivery, and increased internal capability.
-
-**Not tailoring content to government realities.** Public-sector staff need examples that reflect accessibility requirements, privacy constraints, and interdepartmental workflows. Generic corporate examples often miss the mark.
-
-**No permission to apply learning.** If managers do not support process changes, training becomes frustrating. Successful programs align training with leadership support for improvement work.
-
-**Instructor dependency.** If the program relies on a single heroic instructor or team, it will not scale. Reusable materials and shared teaching responsibilities make it durable.
-
-## Conclusion
-
-For local governments trying to modernize, internal training can be one of the highest-ROI investments available. It reduces consultant dependency, improves the quality and sustainability of technical work, and unlocks time savings from tools agencies already pay for. Just as importantly, it builds confidence, community, and retention by helping employees feel capable and supported.
-
-The highest-impact programs follow three principles: tailor content to public-sector realities using internal experts, focus on low-hanging skills that remove everyday friction, and prioritize face-to-face learning to build a culture around practical improvement.
-
-If an agency wants to get started, it does not need a massive curriculum. It needs one pilot series, a handful of volunteer instructors, and a commitment to teaching the basics well—then measuring outcomes honestly and iterating. In a world of expensive systems and ambitious modernization plans, training can be the simplest way to make government work better in practice.
+If a department wants to start, it does not need a grand transformation strategy. It needs a small pilot, a few credible instructors, practical topics, and a willingness to measure outcomes honestly. In a field where modernization is often framed as a large, expensive undertaking, training is one of the rare investments that can be modest, concrete, and immediately useful.
+```
