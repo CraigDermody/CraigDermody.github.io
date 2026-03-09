@@ -146,5 +146,5 @@ p + ul {
 
 /* Optional: tighten spacing between bullet items a touch (set to 0 if you want very tight) */
 li {
-  margin-bottom: 0.2em;
+  margin-bottom: 0em;
 }
