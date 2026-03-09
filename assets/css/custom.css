@@ -133,3 +133,8 @@ hr {
   font-size: 1.15em;
   margin-top: 18px;
 }
+
+/* Tighten spacing before bullet lists (e.g., after employer/location lines) */
+ul {
+  margin-top: 0px;
+}
