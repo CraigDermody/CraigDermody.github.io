@@ -2,11 +2,8 @@
 layout: article
 title: "Data Visualization Shouldn't be Rocket Science"
 date: 2025-10-03
-tags: [dashboard-design, data-visualization, business-intelligence, public-sector, usability]
 excerpt: "Effective data visualization is not about visual complexity; it is about reducing cognitive load so people can quickly understand what matters and act on it."
 ---
-
-## Introduction
 
 Data visualization is often treated as a technical craft first and a communication craft second. You can see this in how dashboards are praised: more charts, more interactivity, more filters, more metrics, more “power.” But in practice, the purpose of data visualization is much simpler than that. The goal is to help people understand something they could not easily understand before.
 
@@ -15,8 +12,6 @@ That is especially true in public-sector analytics and business intelligence wor
 When a dashboard is overloaded, it may look sophisticated while failing at its basic job. Users spend their energy interpreting the interface instead of interpreting the data. They hunt for the relevant chart, decode labels, compare competing signals, and second-guess what they are looking at. That is not insight. That is friction.
 
 The strongest data visualizations are often the simplest. They feel obvious once you see them. They translate technical or intimidating concepts into something understandable and useful. In that sense, good visualization design is less about showing complexity and more about carrying complexity responsibly so other people do not have to.
-
-## The Problem
 
 A common mistake in BI and dashboard work is equating complexity with quality. Teams assume that if a page contains more visuals, more detail, or more interactivity, it must be more valuable. In reality, overcomplexity often reduces value because it increases cognitive load.
 
@@ -37,8 +32,6 @@ I think often about this tradeoff because I experienced it firsthand while worki
 
 That tension matters. A visualization can be informative and still be emotionally or cognitively difficult to use. In high-stakes situations, that distinction is not academic. It affects whether people understand what applies to them and what action they should take.
 
-## A Better Approach
-
 A better approach is to treat data visualization as decision support, not data display. Start with the user’s question. Then design the simplest possible visual structure that answers it clearly.
 
 This is where “less is more” becomes a practical design principle rather than a stylistic preference. Simplicity is not about removing all nuance or making visuals generic. It is about prioritizing what the audience needs most and reducing the effort required to interpret it.
@@ -50,8 +43,6 @@ That experience reinforced an important lesson for me: clarity is not a lesser f
 In public-sector contexts, this matters even more because audiences vary widely in technical background, time available, and emotional state. A resident checking a public dashboard may be anxious, multitasking, or unfamiliar with epidemiology terms. A city manager may have two minutes before a briefing. A frontline staff member may need a quick answer, not an exploratory experience. A simple, well-structured visualization respects those realities.
 
 The best dashboards do not make users work to find the message. They present the message clearly, then offer additional detail only when needed.
-
-## Practical Techniques
 
 The easiest way to avoid overcomplicated dashboards is to adopt a few disciplined design habits. Most of these are not advanced. That is exactly the point.
 
@@ -75,8 +66,6 @@ A few practical rules of thumb also help:
 - If multiple visuals answer the same question, consolidate them.
 - If every metric is labeled “key,” you have not prioritized.
 
-## Common Mistakes
-
 Simplifying dashboards does not mean stripping out context. One common mistake is making a dashboard look clean while removing the information users need to interpret it correctly. A KPI card without a timeframe, denominator, or definition may be visually tidy but analytically weak. Simplicity should reduce confusion, not remove meaning.
 
 Another mistake is hiding too much behind interactivity. Drill-throughs, tooltips, and filters are useful, but they should support a clear structure, not replace it. If users must click through multiple layers to answer a basic question, the dashboard is not actually simple.
@@ -86,8 +75,6 @@ Teams also sometimes prioritize aesthetics over readability. Minimalist layouts 
 A frequent organizational mistake is treating every stakeholder request as equal. This is how dashboards become cluttered. Saying yes to every requested chart often means saying no to clarity. Good dashboard design requires prioritization at the page level: what is primary, what is secondary, and what belongs elsewhere.
 
 Finally, teams sometimes design for the presenter rather than the end user. A dashboard that works well when narrated live may fail when users open it alone. If the meaning depends on a verbal explanation, the visualization needs improvement.
-
-## Conclusion
 
 Data visualization is not rocket science, but it is disciplined communication. The goal is not to impress people with complexity. The goal is to help them understand what matters and act on it.
 
