@@ -10,10 +10,6 @@ title: Resume
   </p>
 </div>
 
-<div style="margin-top: 14px;">
-  <a class="btn" href="{{ '/assets/Craig-Dermody-Resume.pdf' | relative_url }}">Download my resume</a>
-</div>
-
 <hr>
 
 ## Experience
