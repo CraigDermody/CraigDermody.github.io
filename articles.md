@@ -5,7 +5,7 @@ permalink: /articles/
 ---
 
 <p>
-  I build data tools and dashboards that help governments make better decisions. My writing focuses on what actually works in practice; topics range from BI and dashboard design, data modeling and ETL, reporting automation, performance measurement, and user-centered design. If something here resonates, <a href="{{ '/contact/' | relative_url }}">let’s connect</a>.
+  I build data tools and dashboards that help governments make better decisions. Topics include data product development, designing for public-sector users, and practical civic tech project ideas. If something here resonates, <a href="{{ '/contact/' | relative_url }}">let’s connect</a>.
 </p>
 
 <div id="search-container" style="margin: 12px 0 14px 0;"></div>
