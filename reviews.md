@@ -3,7 +3,7 @@ layout: default
 title: Reviews
 ---
 
-## Project Performance Evaluations
+## Project Managers
 
 <div class="card" style="margin: 12px 0;">
   <p style="margin:0;">
@@ -48,7 +48,7 @@ title: Reviews
 </div>
 
 
-## Workshop Attendee Feedback
+## Workshop Attendees
 
 <div class="card" style="margin: 12px 0;">
   <p style="margin:0;">
@@ -89,5 +89,28 @@ title: Reviews
   <p style="margin:0;">
     <strong>Gold-standard training experience.</strong> These were among the best classes participants had ever taken.
     <br><span style="opacity:0.85;">-Anonymous, <em>"Intermediate Power BI and Data Modeling" training</em></span>
+  </p>
+</div>
+
+## Former Colleagues
+
+<div class="card" style="margin: 12px 0;">
+  <p style="margin:0;">
+    <strong>Adaptable, fast learner, top performer.</strong> Craig can succeed in a wide variety of roles. If he doesn’t start with a skill, he picks it up quickly and becomes a top performer.
+    <br><span style="opacity:0.85;">-Kyle Evanoff</span>
+  </p>
+</div>
+
+<div class="card" style="margin: 12px 0;">
+  <p style="margin:0;">
+    <strong>Detail-oriented problem solver and excellent teacher.</strong> Craig is a skilled analyst with strong Power BI chops, clear documentation, and a genuine willingness to train and support colleagues.
+    <br><span style="opacity:0.85;">-Reyna McKinnon</span>
+  </p>
+</div>
+
+<div class="card" style="margin: 12px 0;">
+  <p style="margin:0;">
+    <strong>Hard-working, curious, and quick to learn.</strong> Craig’s curiosity, sharp wit, and ability to learn new skills quickly make him a strong addition to any team.
+    <br><span style="opacity:0.85;">-Jacob Gerstel</span>
   </p>
 </div>
