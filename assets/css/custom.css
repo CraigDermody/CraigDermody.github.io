@@ -157,3 +157,124 @@ p + ul {
 li {
   margin-bottom: 0;
 }
+
+.articles-search-container {
+  margin: 12px 0 14px 0;
+}
+
+.search-input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 520px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #bbb;
+}
+
+.article-card {
+  margin: 12px 0;
+}
+
+.article-title {
+  font-size: 1.15em;
+  font-weight: 800;
+  margin: 0;
+}
+
+.article-title a {
+  text-decoration: none;
+}
+
+.article-title a:hover {
+  text-decoration: underline;
+}
+
+.article-author {
+  margin-top: 6px;
+  font-size: 0.95em;
+  opacity: 0.85;
+}
+
+.article-excerpt {
+  margin-top: 8px;
+  line-height: 1.55;
+}
+
+.article-date {
+  margin-top: 10px;
+  font-size: 0.95em;
+  opacity: 0.75;
+}
+
+.empty-state {
+  opacity: 0.7;
+  margin-top: 12px;
+}
+
+.article-meta {
+  opacity: 0.75;
+  font-size: 0.95em;
+  margin-top: 6px;
+}
+
+.article-divider {
+  margin: 18px 0;
+}
+
+.backlink {
+  display: inline-block;
+  margin: 8px 0 14px 0;
+}
+
+.article-nav {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid #eee;
+}
+
+.article-nav a {
+  text-decoration: none;
+}
+
+.article-nav-col {
+  flex: 1;
+}
+
+.article-nav-col-right {
+  text-align: right;
+}
+
+.article-nav .nav-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px 14px;
+  width: 100%;
+}
+
+.article-nav .label {
+  font-size: 0.85em;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 640px) {
+  .article-nav {
+    flex-direction: column;
+  }
+
+  .article-nav-col-right {
+    text-align: left;
+  }
+}
