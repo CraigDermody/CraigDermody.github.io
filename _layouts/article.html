@@ -1,73 +1,86 @@
 ---
 layout: default
+title: Articles
+permalink: /articles/
 ---
 
-{% assign items = site.articles | sort: "date" %}
-{% assign current_index = nil %}
+<p>
+  I build data tools and dashboards that help governments make better decisions. Topics include data product development, designing for public-sector users, and practical civic tech project ideas. If something here resonates, <a href="{{ '/contact/?reason=networking' | relative_url }}">let’s connect</a>.
+</p>
 
-{% for a in items %}
-  {% if a.url == page.url %}
-    {% assign current_index = forloop.index0 %}
-  {% endif %}
-{% endfor %}
+<div id="search-container" class="articles-search-container"></div>
+<div id="articles-feed"></div>
 
-{% assign prev_index = current_index | minus: 1 %}
-{% assign next_index = current_index | plus: 1 %}
+<script>
+  window.__ARTICLES__ = [
+    {% assign items = site.articles | sort: "date" | reverse %}
+    {% for a in items %}
+    {
+      title: {{ a.title | jsonify }},
+      url: {{ a.url | relative_url | jsonify }},
+      dateISO: {{ a.date | date: "%Y-%m-%d" | jsonify }},
+      dateDisplay: {{ a.date | date: "%b %-d, %Y" | jsonify }},
+      excerpt: {{ a.excerpt | default: "" | strip_html | strip_newlines | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
 
-{% if prev_index >= 0 %}
-  {% assign prev_article = items[prev_index] %}
-{% endif %}
+  (function () {
+    const searchContainer = document.getElementById("search-container");
+    const feedEl = document.getElementById("articles-feed");
 
-{% if next_index < items.size %}
-  {% assign next_article = items[next_index] %}
-{% endif %}
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
 
-<style>
-  /* Minimal, consistent typography for articles */
-  .article-meta { opacity: 0.75; font-size: 0.95em; margin-top: 6px; }
-  .article-author { font-weight: 600; }
-  .article-nav { display:flex; gap:12px; justify-content:space-between; margin-top: 28px; padding-top: 18px; border-top: 1px solid #eee; }
-  .article-nav a { text-decoration:none; }
-  .article-nav .nav-card { border:1px solid #eee; border-radius:10px; padding:12px 14px; width:100%; }
-  .article-nav .label { font-size:0.85em; opacity:0.75; margin-bottom:4px; }
-  .backlink { display:inline-block; margin: 8px 0 14px 0; }
-</style>
+    searchContainer.innerHTML = `
+      <input
+        id="article-search"
+        class="search-input"
+        type="text"
+        placeholder="Search articles..."
+        aria-label="Search articles"
+      >
+    `;
 
-<a class="backlink" href="{{ '/articles/' | relative_url }}">&larr; Back to Articles</a>
+    const searchEl = document.getElementById("article-search");
+    const posts = window.__ARTICLES__ || [];
 
-<h1>{{ page.title }}</h1>
+    function renderFeed() {
+      const q = (searchEl.value || "").toLowerCase().trim();
 
-<div class="article-meta">
-  <div class="article-author">{{ site.author }}</div>
-  <div class="article-date">{{ page.date | date: "%B %-d, %Y" }}</div>
-</div>
+      const filtered = q
+        ? posts.filter((p) =>
+            (p.title || "").toLowerCase().includes(q) ||
+            (p.excerpt || "").toLowerCase().includes(q)
+          )
+        : posts;
 
-<hr style="margin: 18px 0; border: none; border-top: 1px solid #eee;">
+      if (filtered.length === 0) {
+        feedEl.innerHTML = '<div class="empty-state">No articles match your search yet.</div>';
+        return;
+      }
 
-<article class="post-content">
-  {{ content }}
-</article>
+      feedEl.innerHTML = filtered
+        .map((p) => `
+          <div class="card article-card">
+            <div class="article-title">
+              <a href="${p.url}">${escapeHtml(p.title || "")}</a>
+            </div>
+            <div class="article-author">Craig Dermody</div>
+            <div class="article-excerpt">${escapeHtml(p.excerpt || "")}</div>
+            <div class="article-date">${escapeHtml(p.dateDisplay || p.dateISO || "")}</div>
+          </div>
+        `)
+        .join("");
+    }
 
-<div class="article-nav">
-  <div style="flex:1;">
-    {% if prev_article %}
-      <a href="{{ prev_article.url | relative_url }}">
-        <div class="nav-card">
-          <div class="label">&larr; Previous</div>
-          <div><strong>{{ prev_article.title }}</strong></div>
-        </div>
-      </a>
-    {% endif %}
-  </div>
-
-  <div style="flex:1; text-align:right;">
-    {% if next_article %}
-      <a href="{{ next_article.url | relative_url }}">
-        <div class="nav-card">
-          <div class="label">Next &rarr;</div>
-          <div><strong>{{ next_article.title }}</strong></div>
-        </div>
-      </a>
-    {% endif %}
-  </div>
-</div>
+    renderFeed();
+    searchEl.addEventListener("input", renderFeed);
+  })();
+</script>
