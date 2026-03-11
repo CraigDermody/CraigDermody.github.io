@@ -10,7 +10,7 @@ title: Resume
 <div class="card card-muted">
   <p style="margin: 0;">
     I’m finishing a professional sabbatical and am actively searching for my next role.
-    <strong><a href="{{ '/assets/Craig-Dermody-Resume.pdf' | relative_url }}">Review my resume</a> and <a href="{{ '/contact/' | relative_url }}">let’s talk</a>.</strong>
+    <strong><a href="{{ '/assets/Craig-Dermody-Resume.pdf' | relative_url }}">Review my resume</a> and <a href="{{ '/contact/?reason=employment' | relative_url }}">Let’s talk</a>.</strong>
   </p>
 </div>
 
