@@ -30,15 +30,15 @@ title: Craig Dermody
   <ul style="margin: 10px 0 0 0; padding-left: 18px;">
     <li>
       I’m finishing up a professional sabbatical and am actively searching for my next opportunity.
-      <a href="{{ '/contact/' | relative_url }}">Let’s talk</a>.
+      <a href="{{ '/contact/?reason=employment' | relative_url }}">Let’s talk</a>.
     </li>
     <li>
       I provide pro bono support for local governments developing data products/digital services.
-      <a href="{{ '/contact/' | relative_url }}">Let’s collaborate</a>.
+      <a href="{{ '/contact/?reason=probono' | relative_url }}">Let’s collaborate</a>.
     </li>
     <li>
-      I’m always open to network or mentor civic tech professionals working to improve government.
-      <a href="{{ '/contact/' | relative_url }}">Let’s connect</a>.
+      I’m always open to network with or mentor civic tech professionals working to improve government.
+      <a href="{{ '/contact/?reason=networking' | relative_url }}">Let’s connect</a>.
     </li>
   </ul>
 </div>
