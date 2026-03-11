@@ -1,87 +1,91 @@
----
 layout: article
 title: "Case Study: Evaluating the Subjective"
 date: 2025-12-09
-excerpt: "San Francisco’s Park Maintenance Evaluation program shows how to quantify a subjective goal by defining observable standards, scoring consistently, and reporting transparently—with clear limits and context."
+excerpt: "San Francisco’s Park Maintenance Evaluation program shows how to quantify a subjective goal by defining observable standards, scoring consistently, and reporting transparently, with clear limits and context."
 ---
+
+### Defining a Measurable Slice of Experience
 
 “Improve the experience of residents visiting city parks” sounds like the kind of goal everyone agrees with and no one can measure. It is subjective by nature. One person’s great park day is another person’s disappointment, shaped by expectations, mobility needs, crowding, weather, safety perceptions, and everything from playground design to whether the restroom door locks.
 
-And yet, public agencies still need a way to take this goal seriously. If a department cannot define what “better” means, it cannot prioritize resources, diagnose problems, or communicate progress in a way residents can trust. The alternative is vague accountability: people feel that parks are getting worse, leaders insist they are improving, and the conversation becomes more about narrative than evidence.
+And yet, public agencies still need a way to take that goal seriously. If a department cannot define what “better” means, it cannot prioritize resources, diagnose problems, or communicate progress in a way residents can trust. The alternative is vague accountability: residents feel that parks are getting worse, leaders insist they are improving, and the conversation becomes more about narrative than evidence.
 
-San Francisco’s Park Maintenance Evaluation (PME) program is a useful case study because it demonstrates a practical compromise: it does not pretend to measure the entire park experience. Instead, it translates one major component of experience—park maintenance—into observable standards, measured consistently, reported transparently, and used to drive improvement work.
+San Francisco’s [Park Maintenance Evaluation program](https://www.sf.gov/data--park-maintenance-evaluation-about-evaluation) is a useful case study because it shows a practical compromise. It does not pretend to measure the entire park experience. Instead, it translates one major component of that experience, **park maintenance**, into observable standards that are measured consistently, reported transparently, and used to drive improvement work.
 
-I helped administer this program and was responsible for maintaining the methodology, producing the annual report, and auditing the program for objectivity. I believed in its effectiveness because it made a subjective goal operational: it created a shared definition of what “well-maintained” means, and it allowed the City to track whether conditions were improving in a measurable way. But it also revealed a hard lesson about measurement: even airtight methodology can lose usefulness if it is not aligned with how peers measure success. In public-sector performance measurement, rigor and universality are in constant tension.
+I helped administer the program and was responsible for maintaining the methodology, producing the annual report, and auditing the program for objectivity. I believed in its effectiveness because it turned a subjective goal into a measurable task. It created a shared definition of what “well maintained” means through highly specific conditions and allowed the City to track whether those conditions were improving in a measurable way.
+
+<figure style="text-align: center; margin: 2rem 0;">
+  <img
+    src="{{ '/assets/img/Craig Dermody_Article Photo_2.jpg' | relative_url }}"
+    alt="A baby walking in a park."
+    style="display: inline-block; max-width: 100%; height: auto; border: 1px solid #ddd; padding: 6px;"
+  />
+  <figcaption style="margin-top: 0.75rem; font-style: italic;">
+    It was my responsibility to train new park maintenance evaluators, but some were more ready than others.
+  </figcaption>
+</figure>
+
+But even a rigorous program demonstrates the limits of measurability: a strong methodology loses usefulness if it is not aligned with how peers measure success, because evaluations cannot be understood without context. In public-sector performance measurement, there is a tension between precision and contextual applicability.
+
+### The Measurement Problem
 
 Most public agencies have service goals that are fundamentally experiential. In parks, residents care about whether a space feels clean, safe, functional, welcoming, and worth returning to. But the easiest things to measure are often indirect: staffing levels, work orders closed, or tons of trash collected. Those operational counts matter, but they do not always map cleanly to what people experience on the ground.
 
-If a department reports that it closed 5,000 work orders, residents may still see overflowing bins and broken fixtures. If a city reports that it increased mowing hours, parents may still avoid a field because the restroom is unusable. Operational measures can drift away from lived experience.
+A department can report that it closed 5,000 work orders while residents still see overflowing bins and broken fixtures. A city can report that it increased mowing hours while parents still avoid a field because the restroom is unusable. **Operational measures can drift away from lived experience.**
 
-On the other hand, measuring experience purely through surveys can create a different problem. Survey data is valuable, but it can be slow, influenced by high-profile incidents, and difficult to translate into specific actions for crews. “Residents feel parks are less clean” does not tell a superintendent which features failed, where, and why.
+Surveys create a different problem. They are valuable, but they can be slow, influenced by high-profile incidents, and difficult to translate into specific actions for crews. “Residents feel parks are less clean” does not tell a superintendent which features failed, where, and why.
 
-So the measurement challenge is not simply “how do we assign a number to something subjective?” The real challenge is: how do we define a measurable slice of the experience that is both actionable for operations and credible to the public?
+So the challenge is not simply assigning a number to something subjective. Performance measurement requires a credible argument for what a “good job” looks like, often through peer comparison or resident satisfaction. Without context, performance measures lack credibility with the public and carry weight only within the organization.
 
-Layer in the reality of a citywide park system and the problem intensifies. There are hundreds of sites, dozens of feature types, seasonal wear-and-tear, and a mix of routine maintenance issues and deferred capital repairs. A fair measurement system must be consistent across evaluators, repeatable over time, and structured in a way that does not collapse complexity into a single, opaque score.
+### What San Francisco Gets Right
 
-PME takes a straightforward approach: it makes “maintenance quality” measurable by defining standards that can be observed and scored consistently in the field.
+The Park Maintenance Evaluation program takes a straightforward approach: it makes “maintenance quality” measurable by defining black-and-white standards that can be observed and scored consistently in the field with minimal training for evaluators. There are hundreds of highly specific standards like:
 
-At the most granular level, the program uses a large set of maintenance standards—hundreds of specific checks—that are assessed as pass or fail. This is an important design choice. Binary scoring reduces ambiguity and evaluator drift. Instead of asking whether something is “pretty clean” or “acceptable,” the program asks whether it meets defined criteria.
+• Gate does not open fully or cannot be closed enough to latch, or gate latch is missing or not operational  
+• Wood surface has graffiti on it  
+• Crack or hole 2" wide, or larger, going completely through a curb  
+• Floor has filth or spillage on it  
+• Sign text is illegible  
 
-Those standards roll up into a hierarchy that matches how people actually use parks. Similar standards are grouped into elements (common maintenance issues such as cleanliness, equipment, or lighting). Elements are associated with park features—amenities residents use or enjoy, like athletic fields, restrooms, playgrounds, lawns, buildings, courts, and picnic areas. Many parks have multiple instances of the same feature (multiple restrooms, multiple courts), and the scoring accounts for that by aggregating results across instances.
+Evaluators visit a park, review these standards, and report a simple PASS/FAIL for each condition. That design choice matters because **binary scoring reduces ambiguity and evaluator bias.** Instead of asking whether something is “pretty clean” or “acceptable,” the program asks whether it meets a defined criterion.
 
-For very large parks, the program subdivides the park into sites so the evaluation remains feasible and comparable. Scores are collected quarterly, then reported as annual averages to reduce distortion from seasonal effects and one-off events.
+These binary scores are measured, averaged, and rolled up to generate an approximate maintenance score from 0 to 100 percent, and that score does a fairly good job of reflecting the way residents actually use parks. Crucially for park maintenance staff, the evaluations are also clearly actionable. Is there or is there not graffiti on the pickleball court? But the program has inherent drawbacks that are not so easily addressed.
 
-This structure accomplishes three things at once:
+### Ongoing Challenges
 
-1. **It makes a subjective goal operational.** “Better park experience” becomes “better-maintained features that residents rely on.”
-2. **It preserves detail for action.** If a park score drops, staff can identify which features and elements are failing rather than guessing.
-3. **It creates transparency.** Because the standards are published, residents can see what the score represents and judge whether it reflects what they care about.
+The methodology assumes that all maintenance standards are equal, when some maintenance issues are obviously more distressing to residents than others. For example, “hypodermic needle, condom, dead animal, feces, feces-filled bag, or broken glass” is given the same weight as “sticker is on a building or general amenity.” That equal weighting obscures the satisfaction residents actually feel when they visit a park.
 
-Just as importantly, PME acknowledges a reality that many performance systems obscure: some failures are routine maintenance issues, while others reflect deferred capital repairs that require longer planning and budgets. A park can repeatedly fail on issues that maintenance crews cannot quickly fix. A good measurement system distinguishes those dynamics rather than collapsing them into “good” or “bad performance.”
+Another challenge to the usefulness of the program is that almost no one else evaluates parks this way. Yes, each park system has some way to assess overall maintenance and usability, but few use a system as rigorous as San Francisco’s. The result is that maintenance planners and residents alike do not really know whether their parks are better than the average park. What if Oakland’s evaluation method is easier than San Francisco’s? What if San Jose incorporates different inputs, such as subjective surveys of park users? Trying to compare systems is difficult from the start because no one is speaking the same language.
 
-PME is specific to parks, but the underlying patterns are broadly reusable for other subjective public-sector goals.
+One response to this challenge is to track your own progress over time. As long as you keep the same methodology, you can say that parks scored better this year than last year, or under one administration than another. But there are two problems with that approach.
 
-**1) Translate “experience” into observable conditions.**  
-The first step is deciding which slice of experience you can measure reliably. PME focuses on conditions that residents notice immediately: cleanliness, functioning amenities, surface quality, and visible maintenance. This does not capture everything, but it captures something real and meaningful.
+First, it discounts the effects of external factors. I remember one year administering the program when winter brought much more precipitation, wind, and storm damage than usual. Boggy fields became muddier, more tree branches snapped off, and more bad weather days meant fewer opportunities for staff to complete certain maintenance tasks. That year, overall scores in many categories were worse than the year before, likely because of a few major storms. It is not possible to control for every outside influence that can affect performance, from global pandemics to economic conditions to climate change to remote work.
 
-**2) Write standards that are concrete enough to audit.**  
-A standard like “restroom is clean” invites inconsistency. A standard like “no visible litter on floor surfaces” or “fixtures are intact and usable” is easier to score consistently. PME’s standards include detailed criteria across a wide range of maintenance topics such as litter, graffiti, surfaces, fencing, plant condition, and equipment.
+Second, even if you could control for outside influences, who decides where to set the bar? Should the goal be for parks to score 80 percent or 100 percent? Obviously an A+ is better than a B-, but where should the line be drawn when additional money and staff produce diminishing returns? Comparing scores over time in a vacuum can seem just as arbitrary to residents as comparing across peer systems, unless there is a clear argument for why a B- is a reasonable target.
 
-**3) Use binary scoring at the lowest level.**  
-Pass/fail reduces interpretation disputes and makes evaluator training clearer. It also makes auditing feasible. When I audited the program for objectivity, this structure mattered because it allowed us to ask: are evaluators applying the same criteria consistently across parks and quarters?
+### Then Why Bother?
 
-**4) Build a hierarchy that matches how users experience the service.**  
-Residents do not experience “Standard #147.” They experience “the playground” or “the restroom.” PME’s roll-up structure keeps the scoring aligned with how people use parks while preserving detail for operations.
+Nowhere is the expression “the perfect is the enemy of the good” more true than in the public sector, where resources are often scarce and resident perceptions are inherently variable. Measuring program performance as rigorously as possible is still a valuable goal, even if some of these challenges are never fully resolved.
 
-**5) Choose a cadence that supports action but report in a stable way.**  
-Quarterly field evaluations create a regular feedback loop for operations. Annual averaging reduces noise and helps the public interpret trends without overreacting to a single quarter.
+For one thing, it shows residents how seriously their government takes their concerns. Nothing says “I hear you” quite like building an unusually comprehensive park maintenance evaluation system. Second, measurability is closely tied to transparency. Even if public agencies cannot definitively pin down a “good enough” target, residents often know what feels acceptable to them. Giving residents a transparent way to evaluate progress allows them to form their own judgments and apply their own standard of excellence. Even when an agency falls short, openness still matters.
 
-**6) Publish interpretation guidance, not just numbers.**  
-Transparency is not only publishing a dashboard; it is helping people understand what they are seeing. In parks, this includes naming what the score does and does not capture, noting data lags and evaluation cadence, and distinguishing routine maintenance from capital repair drivers.
+### Design Principles Worth Reusing
 
-**7) Treat alignment as part of measurement design.**  
-Here is the lesson I learned most sharply while presenting the PME methodology to parks leaders through the Trust for Public Land. Even when a methodology is robust, its usefulness can be diminished if no other park system measures success in a comparable way. Measurement is partly about internal improvement, but it is also about shared understanding. If your system is so bespoke that it cannot be compared, it becomes harder to benchmark, harder to communicate externally, and harder to translate into broader field learning.
+San Francisco’s Park Maintenance Evaluation program is unusual, and probably overengineered for many contexts. But it still offers a few useful lessons for agencies designing their own performance measurement systems.
 
-This does not mean local agencies should abandon rigor. It means they should balance rigor with universality. When possible, agencies should design measures that can map to common frameworks, or at least provide crosswalks: “Here is how our internal score relates to more widely used indicators.” Without that bridge, a strong methodology can remain isolated.
+1. Translate “experience” into observable conditions that require no specialized knowledge.  
+2. Write standards that are measurable and repeatable enough to audit.  
+3. Use binary scoring when possible, but not so rigidly that you give the same weight to hypodermic needles and stickers.  
+4. Publish interpretation guidance, not just numbers. Residents need to understand the effort as much as the outcome.  
+5. Be honest about measurement challenges, and be clear about the scope of what is being measured.  
 
-Subjective-goal measurement efforts often fail in predictable ways.
+The Park Maintenance Evaluation program highlights a broader challenge in public-sector performance measurement: a methodology can be airtight and still fall short if it is not aligned with how the broader field measures success. The best systems balance both. They are credible enough to guide internal decisions and broad enough to support shared understanding, benchmarking, and public trust.
 
-**Vague criteria create inconsistent scoring.** If evaluators are forced to interpret what “good condition” means, scores become less trustworthy over time.
+In the end, residents do not need government to tell them what they should feel. They need government to show that it hears them and is taking their concerns seriously. Residents want consistency and honesty. That is what turns a subjective goal into a trustworthy public commitment.
 
-**Activity metrics masquerade as experience metrics.** Counting work performed can look like success while residents’ lived experience remains unchanged.
+---
+#### Author's Note
+*[Craig](https://www.linkedin.com/in/craig-dermody/) uses data and technology to improve public services and decision-making, and is currently looking for his next [employment opportunity](https://craigdermody.github.io/resume/). He lives in Oakland with his wife, baby girl, and 32 houseplants.*
 
-**Outcome claims overreach.** A maintenance score should not be presented as proof that residents feel safer or happier. It may contribute, but it does not capture every dimension of experience.
-
-**Opaque single scores erode trust.** If the public sees a number without definitions, they will either dismiss it or weaponize it. Publishing standards and methodology is part of accountability.
-
-**Maintenance and capital condition are conflated.** Holding routine maintenance teams responsible for long-term capital failures creates unfair narratives and unhelpful incentives. A credible program separates those drivers and uses the results to inform budgeting conversations.
-
-**Benchmarking is ignored.** If a system cannot be compared to peers at all, it can become insular. The goal is not ranking for its own sake; it is learning and credibility.
-
-Improving the experience of residents visiting city parks is subjective, but it is not beyond measurement. San Francisco’s Park Maintenance Evaluation program shows one practical path: define observable standards, score consistently, structure results in a way that matches how residents use parks, and publish results transparently with clear interpretation.
-
-The most important lesson is what the program does not do. PME does not claim to measure every aspect of park experience. It measures a concrete, operational slice that matters to residents and can be improved through daily work and long-term capital planning. That restraint is a form of rigor.
-
-At the same time, the program also highlights a broader challenge in public-sector performance measurement: methodology can be airtight and still fall short if it is not aligned with how the broader field measures success. The best systems balance both—credible enough to guide internal decisions, and universal enough to support shared understanding, benchmarking, and public trust.
-
-In the end, residents do not need government to promise certainty. They need government to name what it is trying to improve, measure it honestly, and keep reporting consistently over time. That is what turns a subjective goal into a trustworthy public commitment.
+#### Disclosure
+*AI was used to revise the final draft of this article.*
