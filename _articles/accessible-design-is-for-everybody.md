@@ -4,6 +4,11 @@ title: "Accessible Design is for Everybody"
 date: 2025-09-14
 excerpt: "Accessibility improves public-sector digital services for disabled and non-disabled users alike by making tools clearer, more usable, and more resilient in real-world conditions."
 ---
+
+![A baby in a stroller on a neighborhood walk.]( {{ '/assets/img/Craig Dermody_Article Photo_1.jpg' | relative_url }} )
+
+*Stroller walks made me notice accessibility features, like curb cuts, in a more immediate way.*
+
 Accessibility often gets framed in public-sector technology as something to check at the end of a project. It becomes a compliance review, a specialist concern, or a final gate before launch. Those things matter, but that framing is too narrow. In practice, **accessible design makes systems work better for everyone**. The overlap between accessibility and good user experience is so large that, in many cases, they are effectively the same thing.
 
 ### Accessibility Helps More Than the Primary Audience
