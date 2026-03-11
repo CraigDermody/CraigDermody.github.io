@@ -19,10 +19,10 @@ title: Contact
       <label for="reason">Reason for contact</label>
       <select id="reason" name="reason_for_contact" required>
         <option value="" selected disabled>Select one…</option>
-        <option value="Employment opportunity">Employment opportunity</option>
-        <option value="Networking/mentoring">Networking/mentoring</option>
-        <option value="Pro bono consultation/development">Pro bono consultation/development</option>
-        <option value="Something else">Something else</option>
+        <option value="employment">Employment opportunity</option>
+        <option value="networking">Networking/mentoring</option>
+        <option value="probono">Pro bono consultation/development</option>
+        <option value="other">Something else</option>
       </select>
     </div>
 
@@ -111,6 +111,18 @@ title: Contact
     const status = document.getElementById('status');
     const successMessage = document.getElementById('successMessage');
     const submitBtn = document.getElementById('submitBtn');
+    const reasonSelect = document.getElementById('reason');
+
+    // Preselect dropdown from URL query string, e.g. ?reason=employment
+    const params = new URLSearchParams(window.location.search);
+    const reasonFromUrl = params.get('reason');
+
+    if (reasonFromUrl) {
+      const validValues = ['employment', 'networking', 'probono', 'other'];
+      if (validValues.includes(reasonFromUrl)) {
+        reasonSelect.value = reasonFromUrl;
+      }
+    }
 
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
