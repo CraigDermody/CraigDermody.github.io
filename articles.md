@@ -5,7 +5,7 @@ permalink: /articles/
 ---
 
 <p>
-  I build data tools and dashboards that help governments make better decisions. Topics include data product development, designing for public-sector users, and practical civic tech project ideas. If something here resonates, <a href="{{ '/contact/?reason=networking' | relative_url }}">let’s connect</a>.
+  I use data and technology to improve public services and decision-making. I write about data products, digital services, and improving government. I also write as a convenient excuse to post photos of my very cute baby. If something here resonates, <a href="{{ '/contact/?reason=networking' | relative_url }}">let’s connect</a>.
 </p>
 
 <div id="search-container" class="articles-search-container"></div>
