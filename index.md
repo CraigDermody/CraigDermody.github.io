@@ -12,33 +12,35 @@ title: Craig Dermody
 
   <div class="landing-titleblock">
     <h1 class="landing-title">CRAIG DERMODY</h1>
-    <div class="landing-subtitle">Analytics | Design | Improvement</div>
+    <p class="landing-subtitle">Analytics | Design | Improvement</p>
   </div>
 </div>
 
-<p class="landing-blurb"><strong>I use data and technology to improve public services and decision-making.</strong></p>
+<p class="landing-blurb">
+  <strong>I use data and technology to improve public services and decision-making.</strong>
+</p>
 
 <div class="btn-row">
   <a class="btn" href="{{ '/resume/' | relative_url }}">Review my resume</a>
   <a class="btn" href="{{ '/articles/' | relative_url }}">Browse my articles</a>
-  <a class="btn" href="{{ '/testimonials/' | relative_url }}">Read my reviews</a>
+  <a class="btn" href="{{ '/reviews/' | relative_url }}">Read my reviews</a>
   <a class="btn" href="{{ '/projects/' | relative_url }}">See my projects</a>
 </div>
 
-<div class="card card-muted" style="margin-top: 22px;">
-  <div class="landing-subtitle" style="font-size: 1.35em; margin-top: 0;">Contact me</div>
-  <ul style="margin: 10px 0 0 0; padding-left: 18px;">
+<section class="card card-muted landing-contact">
+  <h2 class="landing-contact-title">Contact me</h2>
+  <ul class="landing-contact-list">
     <li>
-      I’m finishing up a professional sabbatical and am actively searching for my next opportunity.
+      I’m finishing a professional sabbatical and actively searching for my next opportunity.
       <a href="{{ '/contact/?reason=employment' | relative_url }}">Let’s talk</a>.
     </li>
     <li>
-      I provide pro bono support for local governments developing data products/digital services.
+      I provide pro bono support for local governments developing data products and digital services.
       <a href="{{ '/contact/?reason=probono' | relative_url }}">Let’s collaborate</a>.
     </li>
     <li>
-      I’m always open to network with or mentor civic tech professionals working to improve government.
+      I’m always open to networking with or mentoring civic tech professionals working to improve government.
       <a href="{{ '/contact/?reason=networking' | relative_url }}">Let’s connect</a>.
     </li>
   </ul>
-</div>
+</section>
