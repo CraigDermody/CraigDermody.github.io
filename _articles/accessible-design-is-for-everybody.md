@@ -4,11 +4,6 @@ title: "Accessible Design is for Everybody"
 date: 2025-09-14
 excerpt: "Accessibility improves public-sector digital services for disabled and non-disabled users alike by making tools clearer, more usable, and more resilient in real-world conditions."
 ---
-
-![A baby in a stroller on a neighborhood walk.]( {{ '/assets/img/Craig Dermody_Article Photo_1.jpg' | relative_url }} )
-
-*Stroller walks made me notice accessibility features, like curb cuts, in a more immediate way.*
-
 Accessibility often gets framed in public-sector technology as something to check at the end of a project. It becomes a compliance review, a specialist concern, or a final gate before launch. Those things matter, but that framing is too narrow. In practice, **accessible design makes systems work better for everyone**. The overlap between accessibility and good user experience is so large that, in many cases, they are effectively the same thing.
 
 ### Accessibility Helps More Than the Primary Audience
@@ -16,6 +11,17 @@ Accessibility often gets framed in public-sector technology as something to chec
 I have seen this repeatedly in public-facing analytics and digital service work. The same choices that help someone using assistive technology often help a secondary audience too, such as a resident using a phone in bright sunlight or someone trying to complete a task while multitasking. **Clear labels, stronger contrast, predictable navigation, useful error messages, and plain language are not extras. They are the basic ingredients of a usable system.**
 
 I started noticing this more in everyday life after becoming a parent to an outdoors-loving baby girl. Curb cuts made stroller walks around Lake Merritt easier in a way I had never fully appreciated before, especially in Oakland's older neighborhoods where some corners still lack them. Closed captioning let my wife and me watch TV at night without worrying that louder volume would wake the baby, which matters even more when movie-style sound mixing makes quiet dialogue hard to hear. Mobile speech recognition has also become more useful than I once realized. I try not to be on my phone too much in front of my daughter, so being able to send a message, check the weather, or open navigation with my voice is genuinely helpful.
+
+<figure style="text-align: center; margin: 2rem 0;">
+  <img
+    src="{{ '/assets/img/Craig Dermody_Article Photo_1.jpg' | relative_url }}"
+    alt="A baby in a stroller on a neighborhood walk."
+    style="display: inline-block; max-width: 100%; height: auto; border: 1px solid #ddd; padding: 6px;"
+  />
+  <figcaption style="margin-top: 0.75rem; font-style: italic;">
+    Stroller walks made me notice accessibility features, like curb cuts, in a more way I hadn't before.
+  </figcaption>
+</figure>
 
 These are not unusual edge cases. **Accessibility features are woven into everyday life, and many people rely on them without thinking of them as accessibility features at all.**
 
