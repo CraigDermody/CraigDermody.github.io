@@ -1,14 +1,13 @@
-/* ---------- Base typography & rhythm ---------- */
 :root {
   --accent: #2c446f;
   --border: #eee;
-  --muted: rgba(0,0,0,0.72);
+  --muted: rgba(0, 0, 0, 0.72);
   --radius: 14px;
   --pad: 16px;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
@@ -16,36 +15,35 @@ body {
   max-width: 900px;
 }
 
-/* Global links */
 a {
   color: var(--accent);
 }
+
 a:hover {
   opacity: 0.85;
 }
 
-/* Headings: cleaner hierarchy */
 h1 {
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin: 0.2em 0 0.35em 0;
 }
+
 h2 {
   margin-top: 1.6em;
   margin-bottom: 0.6em;
 }
+
 p {
   margin: 0 0 0.9em 0;
 }
 
-/* Consistent section divider */
 hr {
   border: none;
   border-top: 1px solid var(--border);
   margin: 24px 0;
 }
 
-/* ---------- Cards (reusable everywhere) ---------- */
 .card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -57,16 +55,17 @@ hr {
   background: #fafafa;
 }
 
-/* ---------- Buttons (reusable everywhere) ---------- */
 .btn-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 16px;
   border-radius: 999px;
   border: 1px solid #ddd;
@@ -82,15 +81,14 @@ hr {
   background: rgba(44, 68, 111, 0.03);
 }
 
-/* ---------- Active nav indicator (best-effort without overriding header.html) ---------- */
 .site-header a.page-link:hover,
-.site-header a.page-link:focus {
+.site-header a.page-link:focus,
+.site-header a.page-link.active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
 }
 
-/* ---------- Landing page helpers ---------- */
 .landing-header {
   display: flex;
   align-items: flex-start;
@@ -113,9 +111,9 @@ hr {
 }
 
 .landing-title {
-  font-size: 4.2em;
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
   font-weight: 650;
-  white-space: nowrap;
+  line-height: 1;
   text-transform: uppercase;
   margin: 0;
 }
@@ -132,25 +130,30 @@ hr {
   margin-top: 18px;
 }
 
-/* ---------- Lists: tighten spacing, especially after employer/location lines ---------- */
+.landing-contact {
+  margin-top: 22px;
+}
+
+.landing-contact-title {
+  font-size: 1.35em;
+  margin: 0 0 10px 0;
+}
+
+.landing-contact-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
 ul {
-  margin-top: 0.4em;   /* default list spacing elsewhere */
+  margin-top: 0.4em;
   margin-bottom: 0.9em;
   padding-left: 1.2em;
 }
 
-/* When a list immediately follows a paragraph, remove the extra gap */
 p + ul {
   margin-top: 0;
 }
 
-/* Optional: tighten spacing between bullet items a touch (set to 0 if you want very tight) */
 li {
-  margin-bottom: 0em;
-}
-
-.site-header a.page-link.active {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 6px;
+  margin-bottom: 0;
 }
