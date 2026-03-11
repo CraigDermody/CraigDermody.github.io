@@ -1,3 +1,4 @@
+---
 layout: article
 title: "Case Study: Evaluating the Subjective"
 date: 2025-12-09
