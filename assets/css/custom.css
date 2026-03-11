@@ -55,6 +55,10 @@ hr {
   background: #fafafa;
 }
 
+.card > p:last-child {
+  margin-bottom: 0;
+}
+
 .btn-row {
   display: flex;
   flex-wrap: wrap;
@@ -260,7 +264,7 @@ li {
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 12px 14px;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .article-nav .label {
@@ -289,10 +293,6 @@ li {
 
 .review-attribution {
   opacity: 0.85;
-}
-
-.card > p:last-child {
-  margin-bottom: 0;
 }
 
 .contact-card {
@@ -325,6 +325,7 @@ li {
   font-size: 1rem;
   font-family: inherit;
   background: #fff;
+  color: #111;
 }
 
 .field input::placeholder,
@@ -362,6 +363,10 @@ li {
   color: #fff;
 }
 
+.contact-submit:hover {
+  opacity: 0.92;
+}
+
 .contact-submit:disabled {
   opacity: 0.6;
   cursor: not-allowed;
@@ -374,4 +379,13 @@ li {
 
 .contact-success {
   margin-top: 16px;
+}
+
+.btn,
+.contact-submit,
+.search-input,
+.field input,
+.field select,
+.field textarea {
+  transition: border-color 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
 }
