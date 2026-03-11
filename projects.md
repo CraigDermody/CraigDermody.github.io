@@ -30,6 +30,6 @@ title: Projects
   </ul>
 
   <div style="margin-top: 14px;">
-    <a class="btn" href="{{ '/contact/' | relative_url }}">Let’s collaborate</a>
+    <a class="btn" href="{{ '/contact/?reason=probono' | relative_url }}">Let’s collaborate</a>
   </div>
 </div>
