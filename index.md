@@ -35,7 +35,7 @@ title: Craig Dermody
       <a href="{{ '/contact/?reason=employment' | relative_url }}">Let’s talk</a>.
     </li>
     <li>
-      I provide pro bono support for local governments developing data products and digital services.
+      I provide pro bono support to local governments developing data products and digital services.
       <a href="{{ '/contact/?reason=probono' | relative_url }}">Let’s collaborate</a>.
     </li>
     <li>
