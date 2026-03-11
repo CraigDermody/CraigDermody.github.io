@@ -278,3 +278,15 @@ li {
     text-align: left;
   }
 }
+
+.review-card {
+  margin: 12px 0;
+}
+
+.review-text {
+  margin: 0;
+}
+
+.review-attribution {
+  opacity: 0.85;
+}
