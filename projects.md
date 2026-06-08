@@ -12,6 +12,20 @@ title: Projects
 
 <hr>
 
+## Featured project
+
+<div class="card">
+  <h3>Creative Sonoma Impact Dashboard Mockup</h3>
+  <p>
+    A client-facing mockup showing options for embedding a Power BI impact dashboard into Creative Sonoma's existing website experience.
+  </p>
+  <div class="projects-cta">
+    <a class="btn" href="{{ '/Projects/CreativeSonoma/' | relative_url }}">View the mockup</a>
+  </div>
+</div>
+
+<hr>
+
 ## Looking for a project partner?
 
 <div class="card">
