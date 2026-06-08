@@ -200,11 +200,39 @@ var apl_pbm = {"urlLoadMorePost":"https://creativesonoma.org/wp-admin/admin-ajax
   margin: 0 0 6px;
   text-transform: uppercase;
 }
+.dashboard-demo-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 4px 0 10px;
+}
+.dashboard-fullscreen-button {
+  align-items: center;
+  background: #fc5e07;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 8px;
+  line-height: 1;
+  padding: 10px 14px;
+}
+.dashboard-fullscreen-button::before {
+  content: "\26F6";
+  font-size: 15px;
+  line-height: 1;
+}
+.dashboard-fullscreen-button:hover,
+.dashboard-fullscreen-button:focus {
+  background: #d94f03;
+}
 .dashboard-demo-frame {
   background: #ffffff;
   border: 1px solid #d9e1e5;
   box-shadow: 0 10px 28px rgba(27, 81, 111, 0.16);
-  margin-top: 18px;
+  margin-top: 0;
   overflow: hidden;
 }
 .dashboard-demo-frame + .dashboard-demo-frame {
@@ -476,7 +504,10 @@ var apl_pbm = {"urlLoadMorePost":"https://creativesonoma.org/wp-admin/admin-ajax
 				<div class="dashboard-protected-content" data-dashboard-content hidden>
 					<h3 class="dashboard-demo-title">Explore Creative Sonoma's Impact At-A-Glance</h3>
 					<p class="dashboard-demo-copy">This dashboard shows the total grants distributed by Creative Sonoma, broken down by recipients and total amount. Use the top filters to update the bottom cards and visualizations. Hover and click on the charts to see additional detail. Click the "Events" button in the corner to show Creative Sonoma's program event attendance over time.</p>
-					<div class="dashboard-demo-frame">
+					<div class="dashboard-demo-actions">
+						<button class="dashboard-fullscreen-button" type="button" data-dashboard-fullscreen-button>View full screen</button>
+					</div>
+					<div class="dashboard-demo-frame" data-dashboard-fullscreen-target>
 						<div class="dashboard-demo-embed">
 							<iframe title="Creative Sonoma Impact Dashboard" width="1280" height="720" src="https://app.powerbi.com/view?r=eyJrIjoiMTc1OWE5MTYtNTg3Ny00NmNmLWIwYmItZjIwYTAxZGI3Y2I0IiwidCI6IjIyNThhNTc5LTBlMDEtNDczNC1iYzMwLWU5MjZiNGEyMzc0MSIsImMiOjZ9&amp;pageName=6b9771dbedae29697148" frameborder="0" allowfullscreen="true"></iframe>
 						</div>
@@ -829,6 +860,8 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
   var form = document.querySelector("[data-dashboard-password-form]");
   var input = document.querySelector("[data-dashboard-password-input]");
   var error = document.querySelector("[data-dashboard-password-error]");
+  var fullscreenButton = document.querySelector("[data-dashboard-fullscreen-button]");
+  var fullscreenTarget = document.querySelector("[data-dashboard-fullscreen-target]");
 
   function unlock() {
     if (gate) gate.hidden = true;
@@ -857,10 +890,24 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
       }
     });
   }
+
+  if (fullscreenButton && fullscreenTarget) {
+    fullscreenButton.addEventListener("click", function () {
+      var requestFullscreen =
+        fullscreenTarget.requestFullscreen ||
+        fullscreenTarget.webkitRequestFullscreen ||
+        fullscreenTarget.msRequestFullscreen;
+
+      if (requestFullscreen) {
+        requestFullscreen.call(fullscreenTarget);
+      }
+    });
+  }
 }());
 </script>
 </body>
     </html>
+
 
 
 
