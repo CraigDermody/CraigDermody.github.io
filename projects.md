@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Projects
 ---
@@ -6,7 +6,7 @@ title: Projects
 <div class="card card-muted">
   <p>
     Most of my work so far has involved building internal dashboards and tools for government teams, much of which I cannot share publicly.
-    Over time, I’ll add public-facing case studies and sanitized examples that still reflect how I approach analytics, product development, and service delivery.
+    Over time, Iâ€™ll add public-facing case studies and sanitized examples that still reflect how I approach analytics, product development, and service delivery.
   </p>
 </div>
 
@@ -17,10 +17,10 @@ title: Projects
 <div class="card">
   <h3>Creative Sonoma Impact Dashboard Mockup</h3>
   <p>
-    A client-facing mockup showing options for embedding a Power BI impact dashboard into Creative Sonoma's existing website experience.
+    A client-facing mockup showcasing an embedded Power BI impact dashboard into Creative Sonoma's existing website experience.
   </p>
   <div class="projects-cta">
-    <a class="btn" href="{{ '/Projects/CreativeSonoma/' | relative_url }}">View the mockup</a>
+    <a class="btn" href="{{ '/projects/CreativeSonoma/' | relative_url }}">View the mockup</a>
   </div>
 </div>
 
@@ -30,12 +30,12 @@ title: Projects
 
 <div class="card">
   <p>
-    If you’re in local government, a nonprofit, or academia and could use support building a data product, improving an online service, or streamlining a digital workflow,
-    I’m currently taking on a small number of pro bono collaborations to showcase on my site.
+    If youâ€™re in local government, a nonprofit, or academia and could use support building a data product, improving an online service, or streamlining a digital workflow,
+    Iâ€™m currently taking on a small number of pro bono collaborations to showcase on my site.
   </p>
 
   <p class="projects-interest-intro">
-    I’m especially interested in:
+    Iâ€™m especially interested in:
   </p>
   <ul class="projects-interest-list">
     <li>Dashboards and reporting improvements</li>
@@ -44,6 +44,7 @@ title: Projects
   </ul>
 
   <div class="projects-cta">
-    <a class="btn" href="{{ '/contact/?reason=probono' | relative_url }}">Let’s collaborate</a>
+    <a class="btn" href="{{ '/contact/?reason=probono' | relative_url }}">Letâ€™s collaborate</a>
   </div>
 </div>
+

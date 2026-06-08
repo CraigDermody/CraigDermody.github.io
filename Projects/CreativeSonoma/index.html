@@ -1,4 +1,4 @@
-    <!doctype html>
+﻿    <!doctype html>
     <!--[if IE 8]><html lang="en" class="no-js ie ie8"><![endif]-->
     <!--[if IE 9]><html lang="en" class="no-js ie ie9"><![endif]-->
     <!--[if gt IE 9]><!-->
@@ -263,6 +263,62 @@ var apl_pbm = {"urlLoadMorePost":"https://creativesonoma.org/wp-admin/admin-ajax
   line-height: 1.65;
   padding: 4px 18px 24px;
 }
+.dashboard-password-gate {
+  margin: 28px 0 18px;
+}
+.dashboard-password-card {
+  max-width: 520px;
+  border: 1px solid #d8d8d8;
+  background: #ffffff;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.dashboard-password-card h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  line-height: 1.25;
+}
+.dashboard-password-card p {
+  margin: 0 0 16px;
+}
+.dashboard-password-card label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.dashboard-password-row {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+.dashboard-password-row input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 1px solid #b9b9b9;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+.dashboard-password-row button {
+  border: 0;
+  background: #fc5e07;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.dashboard-password-error {
+  color: #b00020;
+  margin-top: 10px !important;
+}
+@media (max-width: 640px) {
+  .dashboard-password-row {
+    display: block;
+  }
+  .dashboard-password-row button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 @media (max-width: 760px) {
   .dashboard-demo-title {
     font-size: 24px;
@@ -360,10 +416,10 @@ var apl_pbm = {"urlLoadMorePost":"https://creativesonoma.org/wp-admin/admin-ajax
 <ul class="apl-btn-submit-event">
 <li><a href="#" class="apl-had-submenu">LOG IN</a>
 <ul style="display: none;" class="apl-submenu-data">
-<li><a style="display: none;" href="#" class="_login_url"><i class="fas fa-sign-in-alt fa-lg"></i>   LOG IN</a></li>
-<li><a style="display: none;" href="#" class="_register_url"><i class="fa fa-user-plus fa-lg"></i>   REGISTER</a></li>
-<li><a style="display: none;" href="#" class="_logout_url"><i class="fas fa-sign-out-alt fa-lg"></i>   LOGOUT</a></li>
-<li><a style="display: none;" href="#" class="_my_account_url"><i class="fa fa-user fa-lg"></i>   MY ACCOUNT</a></li>
+<li><a style="display: none;" href="#" class="_login_url"><i class="fas fa-sign-in-alt fa-lg"></i> Â  LOG IN</a></li>
+<li><a style="display: none;" href="#" class="_register_url"><i class="fa fa-user-plus fa-lg"></i> Â  REGISTER</a></li>
+<li><a style="display: none;" href="#" class="_logout_url"><i class="fas fa-sign-out-alt fa-lg"></i> Â  LOGOUT</a></li>
+<li><a style="display: none;" href="#" class="_my_account_url"><i class="fa fa-user fa-lg"></i> Â  MY ACCOUNT</a></li>
 </ul>
 </li>
 </ul>
@@ -400,53 +456,29 @@ var apl_pbm = {"urlLoadMorePost":"https://creativesonoma.org/wp-admin/admin-ajax
 		</section>
 
 				<section class="elementor-section elementor-top-section dashboard-demo-section elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dashboard-demo" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column" data-element_type="column" data-e-type="column">
+	<div class="elementor-container elementor-column-gap-no">
+		<div class="elementor-column elementor-col-100 elementor-top-column" data-id="dashboard-demo-column" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-				<div class="elementor-widget-container">
-					<div class="dashboard-option">
-						<p class="dashboard-option-label">Option 1: Combined / Interactive</p>
-						<h3 class="dashboard-demo-title">Creative Sonoma Impact Dashboard</h3>
-						<p class="dashboard-demo-copy">This version shows grants, awards, recipients, and event attendance together in one interactive view. Visitors can use drop-down filters to explore the grant information, though the event attendance number stays unchanged because it comes from a separate dataset. This option works well for internal review, but may need explanation for public audiences.</p>
-						<div class="dashboard-demo-frame">
-							<div class="dashboard-demo-embed">
-								<iframe title="Creative Sonoma Impact Dashboard" width="1024" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiMTc1OWE5MTYtNTg3Ny00NmNmLWIwYmItZjIwYTAxZGI3Y2I0IiwidCI6IjIyNThhNTc5LTBlMDEtNDczNC1iYzMwLWU5MjZiNGEyMzc0MSIsImMiOjZ9&amp;pageName=cdf2e0af32e077882916" frameborder="0" allowfullscreen="true"></iframe>
+				<div class="dashboard-password-gate" data-dashboard-gate>
+					<div class="dashboard-password-card">
+						<h3>Creative Sonoma Impact Dashboard</h3>
+						<p>Enter the password to view this dashboard mockup.</p>
+						<form data-dashboard-password-form>
+							<label for="dashboard-password">Password</label>
+							<div class="dashboard-password-row">
+								<input id="dashboard-password" type="password" autocomplete="current-password" data-dashboard-password-input>
+								<button type="submit">View dashboard</button>
 							</div>
-						</div>
+							<p class="dashboard-password-error" data-dashboard-password-error hidden>Incorrect password. Please try again.</p>
+						</form>
 					</div>
-					<div class="dashboard-option">
-						<p class="dashboard-option-label">Option 2: Separated / Interactive</p>
-						<h3 class="dashboard-demo-title">Creative Sonoma Impact Dashboard</h3>
-						<p class="dashboard-demo-copy">This version separates grant information from event attendance and lets visitors switch between views. Each view has filters that apply only to the information on that screen, which can make the experience clearer for public users. The tradeoff is that it is less useful as an at-a-glance internal dashboard because not everything is visible at once.</p>
-						<div class="dashboard-demo-frame">
-							<div class="dashboard-demo-embed">
-								<iframe title="Creative Sonoma Impact Dashboard" width="1024" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiMTc1OWE5MTYtNTg3Ny00NmNmLWIwYmItZjIwYTAxZGI3Y2I0IiwidCI6IjIyNThhNTc5LTBlMDEtNDczNC1iYzMwLWU5MjZiNGEyMzc0MSIsImMiOjZ9&amp;pageName=6b9771dbedae29697148" frameborder="0" allowfullscreen="true"></iframe>
-							</div>
-						</div>
-					</div>
-					<div class="dashboard-option">
-						<p class="dashboard-option-label">Option 3: Combined / Simplified</p>
-						<h3 class="dashboard-demo-title">Creative Sonoma Impact Dashboard</h3>
-						<p class="dashboard-demo-copy">This version presents the key information together in a simpler, website-friendly format without drop-down filters or extra dashboard framing. It is a strong option for public viewing because it is easy to scan and requires little instruction. Internal users may find it less flexible because they cannot filter or drill into the information as much.</p>
-						<div class="dashboard-demo-frame">
-							<div class="dashboard-demo-embed">
-								<iframe title="Creative Sonoma Impact Dashboard" width="1024" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiMTc1OWE5MTYtNTg3Ny00NmNmLWIwYmItZjIwYTAxZGI3Y2I0IiwidCI6IjIyNThhNTc5LTBlMDEtNDczNC1iYzMwLWU5MjZiNGEyMzc0MSIsImMiOjZ9&amp;pageName=51ba458c79474992f7f0" frameborder="0" allowfullscreen="true"></iframe>
-							</div>
-						</div>
-					</div>
-					<div class="dashboard-option">
-						<p class="dashboard-option-label">Option 4: Separated / Simplified</p>
-						<h3 class="dashboard-demo-title">Creative Sonoma Impact Dashboard</h3>
-						<p class="dashboard-demo-copy">This version splits the information into two focused dashboard areas with explanatory text around each one. It gives public visitors a clearer path through the grant and event information, and it leaves room for more detail without making one dashboard feel crowded. Because it is less interactive and separates the content, it is the least suited for internal KPI monitoring.</p>
-						<div class="dashboard-demo-frame">
-							<div class="dashboard-demo-embed">
-								<iframe title="Creative Sonoma Impact Dashboard" width="1024" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiMTc1OWE5MTYtNTg3Ny00NmNmLWIwYmItZjIwYTAxZGI3Y2I0IiwidCI6IjIyNThhNTc5LTBlMDEtNDczNC1iYzMwLWU5MjZiNGEyMzc0MSIsImMiOjZ9&amp;pageName=ffdac6414fdf9c80a339" frameborder="0" allowfullscreen="true"></iframe>
-							</div>
-						</div>
-						<div class="dashboard-demo-frame">
-							<div class="dashboard-demo-embed">
-								<iframe title="Creative Sonoma Impact Dashboard" width="1024" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiMTc1OWE5MTYtNTg3Ny00NmNmLWIwYmItZjIwYTAxZGI3Y2I0IiwidCI6IjIyNThhNTc5LTBlMDEtNDczNC1iYzMwLWU5MjZiNGEyMzc0MSIsImMiOjZ9&amp;pageName=6e7faa3474c3dfe4f911" frameborder="0" allowfullscreen="true"></iframe>
-							</div>
+				</div>
+				<div class="dashboard-protected-content" data-dashboard-content hidden>
+					<h3 class="dashboard-demo-title">Explore Creative Sonoma's Impact At-A-Glance</h3>
+					<p class="dashboard-demo-copy">This dashboard shows the total grants distributed by Creative Sonoma, broken down by recipients and total amount. Use the top filters to update the bottom cards and visualizations. Hover and click on the charts to see additional detail. Click the "Events" button in the corner to show Creative Sonoma's program event attendance over time.</p>
+					<div class="dashboard-demo-frame">
+						<div class="dashboard-demo-embed">
+							<iframe title="Creative Sonoma Impact Dashboard" width="1024" height="650" src="https://app.powerbi.com/view?r=eyJrIjoiMTc1OWE5MTYtNTg3Ny00NmNmLWIwYmItZjIwYTAxZGI3Y2I0IiwidCI6IjIyNThhNTc5LTBlMDEtNDczNC1iYzMwLWU5MjZiNGEyMzc0MSIsImMiOjZ9&amp;pageName=6b9771dbedae29697148" frameborder="0" allowfullscreen="true"></iframe>
 						</div>
 					</div>
 					<details class="dashboard-data-notes">
@@ -458,8 +490,8 @@ var apl_pbm = {"urlLoadMorePost":"https://creativesonoma.org/wp-admin/admin-ajax
 				</div>
 			</div>
 		</div>
-					</div>
-		</section>
+	</div>
+</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-4271bd14 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4271bd14" data-element_type="section" data-e-type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2b94075a" data-id="2b94075a" data-element_type="column" data-e-type="column">
@@ -500,7 +532,7 @@ var apl_pbm = {"urlLoadMorePost":"https://creativesonoma.org/wp-admin/admin-ajax
 												<a class="elementor-toggle-title" tabindex="0">Creative Sonoma Business Plan 2022</a>
 					</h4>
 
-					<div id="elementor-tab-content-1515" class="elementor-tab-content elementor-clearfix" data-tab="5" role="region" aria-labelledby="elementor-tab-title-1515"><p>Funded by The William and Flora Hewlett Foundation and the California Arts Council, the Creative Sonoma Business Plan was developed by Third Plateau in partnership with Creative Sonoma staff and stakeholders. </p><ul><li><a href="https://creativesonoma.org/wp-content/uploads/sites/creativesonoma.org/images/2026/05/Creative-Sonoma-Business-Plan-2022.pdf">2022 Creative Sonoma Business Plan</a></li></ul></div>
+					<div id="elementor-tab-content-1515" class="elementor-tab-content elementor-clearfix" data-tab="5" role="region" aria-labelledby="elementor-tab-title-1515"><p>Funded by The William and Flora Hewlett Foundation and the California Arts Council, the Creative Sonoma Business Plan was developed by Third Plateau in partnership with Creative Sonoma staff and stakeholders.Â </p><ul><li><a href="https://creativesonoma.org/wp-content/uploads/sites/creativesonoma.org/images/2026/05/Creative-Sonoma-Business-Plan-2022.pdf">2022 Creative Sonoma Business Plan</a></li></ul></div>
 				</div>
 							<div class="elementor-toggle-item">
 					<h4 id="elementor-tab-title-1516" class="elementor-tab-title" data-tab="6" role="button" aria-controls="elementor-tab-content-1516" aria-expanded="false">
@@ -590,7 +622,7 @@ var apl_pbm = {"urlLoadMorePost":"https://creativesonoma.org/wp-admin/admin-ajax
                 </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>--></div>
 </div>
 </div>
-<p class="copy-right" style="text-align: center;">© 2026 Creative Sonoma. All Rights Reserved. CreativeSonoma.org is powered by Artsopolis, with skin design by A Bright Idea, and logo design by Cindy Potter.</p>
+<p class="copy-right" style="text-align: center;">Â© 2026 Creative Sonoma. All Rights Reserved. CreativeSonoma.org is powered by Artsopolis, with skin design by A Bright Idea, and logo design by Cindy Potter.</p>
 </div>    <div class="ft-bottom-wrap clearfix">
 <div class="btm-col-left"><a href="#" class="img-logo"></a></div>
 <div class="btm-col-center">
@@ -788,5 +820,46 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 
     </script>
 
-    </body>
+    <script>
+(function () {
+  var expectedPassword = "CreativeSonoma";
+  var storageKey = "creativeSonomaDashboardUnlocked";
+  var gate = document.querySelector("[data-dashboard-gate]");
+  var content = document.querySelector("[data-dashboard-content]");
+  var form = document.querySelector("[data-dashboard-password-form]");
+  var input = document.querySelector("[data-dashboard-password-input]");
+  var error = document.querySelector("[data-dashboard-password-error]");
+
+  function unlock() {
+    if (gate) gate.hidden = true;
+    if (content) content.hidden = false;
+    try { window.sessionStorage.setItem(storageKey, "true"); } catch (e) {}
+  }
+
+  try {
+    if (window.sessionStorage.getItem(storageKey) === "true") {
+      unlock();
+    }
+  } catch (e) {}
+
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var value = input ? input.value : "";
+      if (value === expectedPassword) {
+        unlock();
+      } else {
+        if (error) error.hidden = false;
+        if (input) {
+          input.value = "";
+          input.focus();
+        }
+      }
+    });
+  }
+}());
+</script>
+</body>
     </html>
+
+
